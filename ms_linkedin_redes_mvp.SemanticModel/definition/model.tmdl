@@ -1,0 +1,31 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["tb_content_metrics","tb_visitors_metrics","tb_followers_new","tb_competitors","tb_content_posts"]
+
+annotation __LastRPTime = 134382750643659921
+
+annotation PBI_ProTooling = ["WebModelingEdit","DevMode"]
+
+ref table tb_content_metrics
+ref table tb_visitors_metrics
+ref table tb_followers_new
+ref table tb_competitors
+ref table tb_content_posts
+ref table dim_calendario
+ref table DateTableTemplate_8c831f91-b6ca-4cd5-998f-2cd66c07cc6c
+ref table LocalDateTable_e0adca73-7a4f-476c-887e-57227dda838e
+ref table LocalDateTable_35c657ac-96a3-4ac1-9e5e-cdacf56a1e60
+ref table LocalDateTable_edd698e9-ec75-46fb-bed3-9ab5da8b015e
+ref table '00. indicadores gerais (conteúdo)'
+ref table '01. indicadores por publicação'
+ref table '02. seguidores'
+ref table '03. visitas'
+

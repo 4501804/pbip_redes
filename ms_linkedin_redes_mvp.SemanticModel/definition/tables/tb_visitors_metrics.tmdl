@@ -1,0 +1,261 @@
+table tb_visitors_metrics
+	lineageTag: f9172c89-8efb-47d5-b2cb-510b6fda3dd8
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: fcb4c6d6-68b2-445a-b003-8c11e987cd23
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: a92685fa-50b6-4c93-b83f-4f8e176a0ad0
+			defaultHierarchy: LocalDateTable_35c657ac-96a3-4ac1-9e5e-cdacf56a1e60.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Overview page views (desktop)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7bfe112d-400a-4d7a-9dfc-8c45b4874210
+		summarizeBy: sum
+		sourceColumn: Overview page views (desktop)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Overview page views (mobile)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 423da274-e7b5-4c71-acf9-5e2e88e78c3c
+		summarizeBy: sum
+		sourceColumn: Overview page views (mobile)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Overview page views (total)'
+		dataType: int64
+		formatString: 0
+		lineageTag: a18da0fb-c3ad-45d7-865b-5a951a9acb71
+		summarizeBy: sum
+		sourceColumn: Overview page views (total)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Overview unique visitors (desktop)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 395a3429-e98b-4417-aadb-c65b016dc639
+		summarizeBy: sum
+		sourceColumn: Overview unique visitors (desktop)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Overview unique visitors (mobile)'
+		dataType: int64
+		formatString: 0
+		lineageTag: fcad862b-4473-49ac-9d33-3ccc0a928a65
+		summarizeBy: sum
+		sourceColumn: Overview unique visitors (mobile)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Overview unique visitors (total)'
+		dataType: int64
+		formatString: 0
+		lineageTag: ff265d95-b8c6-46df-8295-e8f762c53546
+		summarizeBy: sum
+		sourceColumn: Overview unique visitors (total)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Life page views (desktop)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3e476116-f218-417d-b8f3-599d1fdad3a0
+		summarizeBy: sum
+		sourceColumn: Life page views (desktop)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Life page views (mobile)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 630ed18a-60c2-44df-ae73-acb81fee2d1f
+		summarizeBy: sum
+		sourceColumn: Life page views (mobile)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Life page views (total)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 38ee2153-3524-4f14-8d94-3ee430716b46
+		summarizeBy: sum
+		sourceColumn: Life page views (total)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Life unique visitors (desktop)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 904d27bf-9e96-468e-9fba-c9c01c983f8a
+		summarizeBy: sum
+		sourceColumn: Life unique visitors (desktop)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Life unique visitors (mobile)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4ecea5f2-188d-47a2-9b89-29d6dc4183a4
+		summarizeBy: sum
+		sourceColumn: Life unique visitors (mobile)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Life unique visitors (total)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6718bbd8-d321-4ecd-bd5f-37b0245ffd28
+		summarizeBy: sum
+		sourceColumn: Life unique visitors (total)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jobs page views (desktop)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1966f1c3-c349-4948-a1a2-ae718ca8771b
+		summarizeBy: sum
+		sourceColumn: Jobs page views (desktop)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jobs page views (mobile)'
+		dataType: int64
+		formatString: 0
+		lineageTag: a3678740-5bde-41b5-9442-d19a7177a716
+		summarizeBy: sum
+		sourceColumn: Jobs page views (mobile)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jobs page views (total)'
+		dataType: int64
+		formatString: 0
+		lineageTag: db3b48b3-6601-4da8-9c52-459d0b56954c
+		summarizeBy: sum
+		sourceColumn: Jobs page views (total)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jobs unique visitors (desktop)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 67eea45c-a5bc-40cc-a74d-9cda0fa9c701
+		summarizeBy: sum
+		sourceColumn: Jobs unique visitors (desktop)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jobs unique visitors (mobile)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 65535e17-aa64-4dc8-a16b-19c2c398842b
+		summarizeBy: sum
+		sourceColumn: Jobs unique visitors (mobile)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jobs unique visitors (total)'
+		dataType: int64
+		formatString: 0
+		lineageTag: bce15121-db44-4b2d-a6cb-80427e8f1f0e
+		summarizeBy: sum
+		sourceColumn: Jobs unique visitors (total)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total page views (desktop)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 657c2456-1aa1-4937-8407-b7530c929f26
+		summarizeBy: sum
+		sourceColumn: Total page views (desktop)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total page views (mobile)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 443e3fed-b7a1-4e43-88f8-b5f1ba35d29a
+		summarizeBy: sum
+		sourceColumn: Total page views (mobile)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total page views (total)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 38cde4c1-4e0e-4138-bb6c-679b6c8a09eb
+		summarizeBy: sum
+		sourceColumn: Total page views (total)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total unique visitors (desktop)'
+		dataType: int64
+		formatString: 0
+		lineageTag: b157fc17-f54a-47c8-a4c3-3cba1e572381
+		summarizeBy: sum
+		sourceColumn: Total unique visitors (desktop)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total unique visitors (mobile)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 88f89115-8ac5-43cc-ae84-8876c7b00a52
+		summarizeBy: sum
+		sourceColumn: Total unique visitors (mobile)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total unique visitors (total)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3662b50d-b233-4f17-bf38-6ffe9e3b07b4
+		summarizeBy: sum
+		sourceColumn: Total unique visitors (total)
+
+		annotation SummarizationSetBy = Automatic
+
+	partition tb_visitors_metrics = m
+		mode: import
+		source =
+				let
+				    Fonte = SharePoint.Files(
+				        "https://mackenzie365.sharepoint.com/sites/1001000598_Redes",
+				        [ApiVersion = 15]
+				    ),
+				
+				    PastaLinkedin = Table.SelectRows(
+				        Fonte,
+				        each Text.Contains(
+				            [Folder Path],
+				            "/Documentos Compartilhados/Dados/2026/Linkedin/"
+				        )
+				    ),
+				  Navegação = PastaLinkedin{[Name = "LinkedIn mackenzie1870_visitors_1793150469586.xlsx", #"Folder Path" = "https://mackenzie365.sharepoint.com/sites/1001000598_Redes/Documentos Compartilhados/Dados/2026/Linkedin/"]}[Content],
+				  #"Pasta de trabalho do Excel importada" = Excel.Workbook(Navegação, null, true),
+				  #"Navegação 1" = #"Pasta de trabalho do Excel importada"{[Item = "Visitor metrics", Kind = "Sheet"]}[Data],
+				  #"Cabeçalhos promovidos" = Table.PromoteHeaders(#"Navegação 1", [PromoteAllScalars = true]),
+				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(#"Cabeçalhos promovidos", {{"Date", type date}, {"Overview page views (desktop)", Int64.Type}, {"Overview page views (mobile)", Int64.Type}, {"Overview page views (total)", Int64.Type}, {"Overview unique visitors (desktop)", Int64.Type}, {"Overview unique visitors (mobile)", Int64.Type}, {"Overview unique visitors (total)", Int64.Type}, {"Life page views (desktop)", Int64.Type}, {"Life page views (mobile)", Int64.Type}, {"Life page views (total)", Int64.Type}, {"Life unique visitors (desktop)", Int64.Type}, {"Life unique visitors (mobile)", Int64.Type}, {"Life unique visitors (total)", Int64.Type}, {"Jobs page views (desktop)", Int64.Type}, {"Jobs page views (mobile)", Int64.Type}, {"Jobs page views (total)", Int64.Type}, {"Jobs unique visitors (desktop)", Int64.Type}, {"Jobs unique visitors (mobile)", Int64.Type}, {"Jobs unique visitors (total)", Int64.Type}, {"Total page views (desktop)", Int64.Type}, {"Total page views (mobile)", Int64.Type}, {"Total page views (total)", Int64.Type}, {"Total unique visitors (desktop)", Int64.Type}, {"Total unique visitors (mobile)", Int64.Type}, {"Total unique visitors (total)", Int64.Type}})
+				in
+				    #"Tipo de coluna alterado"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,220 @@
+table tb_content_metrics
+	lineageTag: 7fe6c8a4-81b1-4a5a-8dd2-5c7e7cedc918
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9c29b045-06f2-4758-ab88-11eeee34b975
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: d0530942-af60-464b-a644-f4b9c76ab68d
+			defaultHierarchy: LocalDateTable_e0adca73-7a4f-476c-887e-57227dda838e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Impressions (organic)'
+		dataType: int64
+		formatString: 0
+		lineageTag: a38ad7a3-ef18-436f-94cc-cb375e2263af
+		summarizeBy: sum
+		sourceColumn: Impressions (organic)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Impressions (sponsored)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 22d33912-9992-4dc5-b051-901849050e0d
+		summarizeBy: sum
+		sourceColumn: Impressions (sponsored)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Impressions (total)'
+		dataType: int64
+		formatString: 0
+		lineageTag: ab762ef5-6eeb-4715-9e8f-248b442ccb02
+		summarizeBy: sum
+		sourceColumn: Impressions (total)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Unique impressions (organic)'
+		dataType: int64
+		formatString: 0
+		lineageTag: c5d255c6-32f7-4871-9f3d-670832b818a2
+		summarizeBy: sum
+		sourceColumn: Unique impressions (organic)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Clicks (organic)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 259df66b-4f8a-45f2-9579-2464dbf69c49
+		summarizeBy: sum
+		sourceColumn: Clicks (organic)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Clicks (sponsored)'
+		dataType: int64
+		formatString: 0
+		lineageTag: df4cb174-7a45-4c46-bc4c-becefbbb3470
+		summarizeBy: sum
+		sourceColumn: Clicks (sponsored)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Clicks (total)'
+		dataType: int64
+		formatString: 0
+		lineageTag: b5495e3c-0532-41d3-8405-d509fd68dbc1
+		summarizeBy: sum
+		sourceColumn: Clicks (total)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reactions (organic)'
+		dataType: int64
+		formatString: 0
+		lineageTag: cda9f366-e97c-4ceb-abe4-1116340537d9
+		summarizeBy: sum
+		sourceColumn: Reactions (organic)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reactions (sponsored)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 434ca167-27fe-4e6b-b165-f662a11ad48e
+		summarizeBy: sum
+		sourceColumn: Reactions (sponsored)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reactions (total)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0228ce02-e7f7-4044-9b61-d707fb7cfad7
+		summarizeBy: sum
+		sourceColumn: Reactions (total)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Comments (organic)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 76fdf0ff-7f16-4e0e-aabc-45fd07836ff2
+		summarizeBy: sum
+		sourceColumn: Comments (organic)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Comments (sponsored)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 5ef036e8-f2a8-493d-a3cc-1a1b4bfbbcc7
+		summarizeBy: sum
+		sourceColumn: Comments (sponsored)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Comments (total)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 95696340-df83-4f8c-a083-0733fe79f95c
+		summarizeBy: sum
+		sourceColumn: Comments (total)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reposts (organic)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 09d0f7d6-db4b-4a95-8ad4-dc4095e68d23
+		summarizeBy: sum
+		sourceColumn: Reposts (organic)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reposts (sponsored)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 221f51cf-d653-439b-8d4d-ee523e90e5f2
+		summarizeBy: sum
+		sourceColumn: Reposts (sponsored)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reposts (total)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9693c5f4-426e-4485-8f97-d23b7a71c0d0
+		summarizeBy: sum
+		sourceColumn: Reposts (total)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Engagement rate (organic)'
+		dataType: double
+		lineageTag: 5b2ea1c8-8abd-4991-ae81-37e4983b05f4
+		summarizeBy: sum
+		sourceColumn: Engagement rate (organic)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Engagement rate (sponsored)'
+		dataType: double
+		lineageTag: b4268dba-863d-41d1-a208-57a2dafb3c47
+		summarizeBy: sum
+		sourceColumn: Engagement rate (sponsored)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Engagement rate (total)'
+		dataType: double
+		lineageTag: 95e852d2-a099-4f2b-9066-45b419ffb0c3
+		summarizeBy: sum
+		sourceColumn: Engagement rate (total)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition tb_content_metrics = m
+		mode: import
+		source =
+				let
+				    Fonte = SharePoint.Files(
+				        "https://mackenzie365.sharepoint.com/sites/1001000598_Redes",
+				        [ApiVersion = 15]
+				    ),
+				
+				    PastaLinkedin = Table.SelectRows(
+				        Fonte,
+				        each Text.Contains(
+				            [Folder Path],
+				            "/Documentos Compartilhados/Dados/2026/Linkedin/"
+				        )
+				    ),
+				  Navegação = PastaLinkedin{[Name = "LinkedIn mackenzie1870_content_1793150457687.xlsx", #"Folder Path" = "https://mackenzie365.sharepoint.com/sites/1001000598_Redes/Documentos Compartilhados/Dados/2026/Linkedin/"]}[Content],
+				  #"Pasta de trabalho do Excel importada" = Excel.Workbook(Navegação, null, true),
+				  #"Navegação 1" = #"Pasta de trabalho do Excel importada"{[Item = "Metrics", Kind = "Sheet"]}[Data],
+				  #"Linhas superiores removidas" = Table.Skip(#"Navegação 1", 1),
+				  #"Cabeçalhos promovidos" = Table.PromoteHeaders(#"Linhas superiores removidas", [PromoteAllScalars = true]),
+				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(#"Cabeçalhos promovidos", {{"Date", type date}, {"Impressions (organic)", Int64.Type}, {"Impressions (sponsored)", Int64.Type}, {"Impressions (total)", Int64.Type}, {"Unique impressions (organic)", Int64.Type}, {"Clicks (organic)", Int64.Type}, {"Clicks (sponsored)", Int64.Type}, {"Clicks (total)", Int64.Type}, {"Reactions (organic)", Int64.Type}, {"Reactions (sponsored)", Int64.Type}, {"Reactions (total)", Int64.Type}, {"Comments (organic)", Int64.Type}, {"Comments (sponsored)", Int64.Type}, {"Comments (total)", Int64.Type}, {"Reposts (organic)", Int64.Type}, {"Reposts (sponsored)", Int64.Type}, {"Reposts (total)", Int64.Type}, {"Engagement rate (organic)", type number}, {"Engagement rate (sponsored)", type number}, {"Engagement rate (total)", type number}})
+				in
+				    #"Tipo de coluna alterado"
+
+	annotation PBI_ResultType = Table
+

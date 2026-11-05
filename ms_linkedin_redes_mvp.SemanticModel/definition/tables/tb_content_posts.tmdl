@@ -1,0 +1,206 @@
+table tb_content_posts
+	lineageTag: be000858-91b8-4f0a-90bb-bc03af7dec0e
+
+	column 'Post title'
+		dataType: string
+		lineageTag: e9a9bab9-0bcb-45a3-b8eb-8f68fef7053b
+		summarizeBy: none
+		sourceColumn: Post title
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Post link'
+		dataType: string
+		lineageTag: 82ad687c-10d7-49cf-bb44-b4578b1534e3
+		summarizeBy: none
+		sourceColumn: Post link
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Post type'
+		dataType: string
+		lineageTag: b1423e11-5919-4e62-830b-1b45afc455d6
+		summarizeBy: none
+		sourceColumn: Post type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Campaign name'
+		dataType: string
+		lineageTag: 5766a799-fcda-4b31-a354-a8611c9bd853
+		summarizeBy: none
+		sourceColumn: Campaign name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Posted by'
+		dataType: string
+		lineageTag: 0689ea49-7aa9-4692-99e7-e08925b25cd7
+		summarizeBy: none
+		sourceColumn: Posted by
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 22eaae15-7e10-49f5-9533-6dabd7736d01
+		summarizeBy: none
+		sourceColumn: Created date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Campaign start date'
+		dataType: string
+		lineageTag: 88c97881-858d-4c7c-84c4-0dbad00b9c7f
+		summarizeBy: none
+		sourceColumn: Campaign start date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Campaign end date'
+		dataType: string
+		lineageTag: 0f8f64f9-4929-4765-8c3a-91c395c168e0
+		summarizeBy: none
+		sourceColumn: Campaign end date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Audience
+		dataType: string
+		lineageTag: 5467b630-6a04-41ab-bca2-393534310a2e
+		summarizeBy: none
+		sourceColumn: Audience
+
+		annotation SummarizationSetBy = Automatic
+
+	column Impressions
+		dataType: int64
+		formatString: 0
+		lineageTag: b824e4f5-e1cf-4470-a768-f9e76bc0617f
+		summarizeBy: sum
+		sourceColumn: Impressions
+
+		annotation SummarizationSetBy = Automatic
+
+	column Views
+		dataType: int64
+		formatString: 0
+		lineageTag: d334a2bf-b62c-4f5f-b6d7-f601b71587aa
+		summarizeBy: sum
+		sourceColumn: Views
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Offsite Views'
+		dataType: int64
+		formatString: 0
+		lineageTag: aea7b2e5-e786-42cf-bb96-ac0bd95c911d
+		summarizeBy: sum
+		sourceColumn: Offsite Views
+
+		annotation SummarizationSetBy = Automatic
+
+	column Clicks
+		dataType: int64
+		formatString: 0
+		lineageTag: 2cf6e87d-a5db-4366-b8a3-f7dd8cca6dfc
+		summarizeBy: sum
+		sourceColumn: Clicks
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Click through rate (CTR)'
+		dataType: double
+		lineageTag: 0c9e2d1e-57ab-4ac7-9a7a-c590418c356a
+		summarizeBy: sum
+		sourceColumn: Click through rate (CTR)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Likes
+		dataType: int64
+		formatString: 0
+		lineageTag: 8b480a2f-579e-4e64-adbd-1ce9720997da
+		summarizeBy: sum
+		sourceColumn: Likes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Comments
+		dataType: int64
+		formatString: 0
+		lineageTag: 27e6ca59-37b2-4a8e-b861-085bf37bf72a
+		summarizeBy: sum
+		sourceColumn: Comments
+
+		annotation SummarizationSetBy = Automatic
+
+	column Reposts
+		dataType: int64
+		formatString: 0
+		lineageTag: 3eff8b26-dc4b-408d-8a32-cc815fca5e76
+		summarizeBy: sum
+		sourceColumn: Reposts
+
+		annotation SummarizationSetBy = Automatic
+
+	column Follows
+		dataType: int64
+		formatString: 0
+		lineageTag: f8ea472b-1243-405c-8c16-e7bf9c1e82d4
+		summarizeBy: sum
+		sourceColumn: Follows
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Engagement rate'
+		dataType: double
+		lineageTag: ce600c40-83d2-4ed5-a427-3fed07280ce4
+		summarizeBy: sum
+		sourceColumn: Engagement rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Content Type'
+		dataType: string
+		lineageTag: df050806-6bf1-468c-b7e5-ea72338649ce
+		summarizeBy: none
+		sourceColumn: Content Type
+
+		annotation SummarizationSetBy = Automatic
+
+	partition tb_content_posts = m
+		mode: import
+		source =
+				let
+				    Fonte = SharePoint.Files(
+				        "https://mackenzie365.sharepoint.com/sites/1001000598_Redes",
+				        [ApiVersion = 15]
+				    ),
+				
+				    PastaLinkedin = Table.SelectRows(
+				        Fonte,
+				        each Text.Contains(
+				            [Folder Path],
+				            "/Documentos Compartilhados/Dados/2026/Linkedin/"
+				        )
+				    ),
+				  Navegação = PastaLinkedin{[Name = "LinkedIn mackenzie1870_content_1793150457687.xlsx", #"Folder Path" = "https://mackenzie365.sharepoint.com/sites/1001000598_Redes/Documentos Compartilhados/Dados/2026/Linkedin/"]}[Content],
+				  #"Pasta de trabalho do Excel importada" = Excel.Workbook(Navegação, null, true),
+				  #"Navegação 1" = #"Pasta de trabalho do Excel importada"{[Item = "All posts", Kind = "Sheet"]}[Data],
+				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(#"Navegação 1", {{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Column9", type text}, {"Column20", type text}}),
+				  #"Linhas superiores removidas" = Table.Skip(#"Tipo de coluna alterado", 1),
+				  #"Cabeçalhos promovidos" = Table.PromoteHeaders(#"Linhas superiores removidas", [PromoteAllScalars = true]),
+				  #"Tipo de coluna alterado 1" = Table.TransformColumnTypes(#"Cabeçalhos promovidos", {{"Impressions", Int64.Type}, {"Views", Int64.Type}, {"Created date", type date}, {"Offsite Views", Int64.Type}, {"Clicks", Int64.Type}, {"Click through rate (CTR)", type number}, {"Likes", Int64.Type}, {"Comments", Int64.Type}, {"Reposts", Int64.Type}, {"Follows", Int64.Type}, {"Engagement rate", type number}})
+				in
+				    #"Tipo de coluna alterado 1"
+
+	annotation PBI_ResultType = Table
+

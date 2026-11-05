@@ -1,0 +1,81 @@
+table tb_followers_new
+	lineageTag: 88359043-4809-44d5-bceb-efcd4ff39a29
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 35d391df-7cf9-43f9-8047-04387df8d1f4
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: 2e9b7346-62aa-44cd-9a7b-cab2eb5a5f9c
+			defaultHierarchy: LocalDateTable_edd698e9-ec75-46fb-bed3-9ab5da8b015e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Sponsored followers'
+		dataType: int64
+		formatString: 0
+		lineageTag: 65c38110-e0dd-4173-ba01-1719524c166e
+		summarizeBy: sum
+		sourceColumn: Sponsored followers
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Organic followers'
+		dataType: int64
+		formatString: 0
+		lineageTag: 010b44ec-27a0-4d24-9019-0f9acc4cbf46
+		summarizeBy: sum
+		sourceColumn: Organic followers
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Auto-invited followers'
+		dataType: int64
+		formatString: 0
+		lineageTag: 385b1994-19c0-455a-8b4e-97a61ce36350
+		summarizeBy: sum
+		sourceColumn: Auto-invited followers
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total followers'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0c80359c-470f-4bf0-ad22-3dd4fc3f297a
+		summarizeBy: sum
+		sourceColumn: Total followers
+
+		annotation SummarizationSetBy = Automatic
+
+	partition tb_followers_new = m
+		mode: import
+		source =
+				let
+				    Fonte = SharePoint.Files(
+				        "https://mackenzie365.sharepoint.com/sites/1001000598_Redes",
+				        [ApiVersion = 15]
+				    ),
+				
+				    PastaLinkedin = Table.SelectRows(
+				        Fonte,
+				        each Text.Contains(
+				            [Folder Path],
+				            "/Documentos Compartilhados/Dados/2026/Linkedin/"
+				        )
+				    ),
+				  Navegação = PastaLinkedin{[Name = "LinkedIn mackenzie1870_followers_1793150476997.xlsx", #"Folder Path" = "https://mackenzie365.sharepoint.com/sites/1001000598_Redes/Documentos Compartilhados/Dados/2026/Linkedin/"]}[Content],
+				  #"Pasta de trabalho do Excel importada" = Excel.Workbook(Navegação, null, true),
+				  #"Navegação 1" = #"Pasta de trabalho do Excel importada"{[Item = "New followers", Kind = "Sheet"]}[Data],
+				  #"Cabeçalhos promovidos" = Table.PromoteHeaders(#"Navegação 1", [PromoteAllScalars = true]),
+				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(#"Cabeçalhos promovidos", {{"Date", type date}, {"Sponsored followers", Int64.Type}, {"Organic followers", Int64.Type}, {"Auto-invited followers", Int64.Type}, {"Total followers", Int64.Type}})
+				in
+				    #"Tipo de coluna alterado"
+
+	annotation PBI_ResultType = Table
+

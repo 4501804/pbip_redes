@@ -1,0 +1,152 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 1440.9458964568846,
+        "y": 183.59361557735718
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 128.66189490310111,
+            "y": 60.312210810938332
+          },
+          "nodeIndex": "tb_competitors",
+          "nodeLineageTag": "6800e3d7-7833-4855-8153-03a8e15dad8d",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 1107.3896444278244,
+            "y": 399.37296134766723
+          },
+          "nodeIndex": "tb_content_metrics",
+          "nodeLineageTag": "7fe6c8a4-81b1-4a5a-8dd2-5c7e7cedc918",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 845.04033419715529,
+            "y": 396.79584195978669
+          },
+          "nodeIndex": "tb_content_posts",
+          "nodeLineageTag": "be000858-91b8-4f0a-90bb-bc03af7dec0e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 573.86567908182076,
+            "y": 388.88472459591719
+          },
+          "nodeIndex": "tb_followers_new",
+          "nodeLineageTag": "88359043-4809-44d5-bceb-efcd4ff39a29",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 301,
+            "y": 398.44192612621589
+          },
+          "nodeIndex": "tb_visitors_metrics",
+          "nodeLineageTag": "f9172c89-8efb-47d5-b2cb-510b6fda3dd8",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 667.35291886958737,
+            "y": 72.0787990868418
+          },
+          "nodeIndex": "dim_calendario",
+          "nodeLineageTag": "90108ccb-0a58-43c7-b43d-915456cf38fa",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1440.9458964568846,
+            "y": 183.59361557735718
+          },
+          "nodeIndex": "00. indicadores gerais (conteúdo)",
+          "nodeLineageTag": "85e84507-7be9-4e8c-b8a4-39877c95a25e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1689.7563260435279,
+            "y": 180.1881732792904
+          },
+          "nodeIndex": "01. indicadores por publicação",
+          "nodeLineageTag": "0d38249d-2245-4e1c-9c45-153ee1543d1b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1442.1170925358583,
+            "y": 501.63444681109377
+          },
+          "nodeIndex": "02. seguidores",
+          "nodeLineageTag": "75d8fa83-4844-4421-8aac-6131cae94f4a",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1696.3901174581777,
+            "y": 505.25454008691008
+          },
+          "nodeIndex": "03. visitas",
+          "nodeLineageTag": "1d45220d-1c61-46e6-b0b3-bc0135a41b4f",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 37.360575918133065,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

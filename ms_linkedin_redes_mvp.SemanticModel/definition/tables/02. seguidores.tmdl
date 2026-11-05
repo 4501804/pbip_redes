@@ -1,0 +1,22 @@
+table '02. seguidores'
+	lineageTag: 75d8fa83-4844-4421-8aac-6131cae94f4a
+
+	measure seguidores_novos = CALCULATE(sum(tb_followers_new[Total followers]))
+		formatString: 0
+		lineageTag: ba21a3ec-ffde-4a92-adf4-a5c0627af4ab
+
+	column Value
+		formatString: 0
+		lineageTag: dcdd8d38-fb3b-4889-b84d-272b259d7ac4
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '02. seguidores' = calculated
+		mode: import
+		source = {BLANK()}
+
+	annotation PBI_Id = 91503b9df2134e7599d498821a50e56a
+

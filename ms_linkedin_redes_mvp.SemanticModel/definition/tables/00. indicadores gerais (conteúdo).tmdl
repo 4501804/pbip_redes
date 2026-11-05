@@ -1,0 +1,43 @@
+table '00. indicadores gerais (conteúdo)'
+	lineageTag: 85e84507-7be9-4e8c-b8a4-39877c95a25e
+
+	measure total_cliques = calculate(sum(tb_content_metrics[Clicks (total)]))
+		formatString: 0
+		lineageTag: 8a232eca-5bfd-43bf-8f1c-93550b59ba3e
+
+	measure total_impressoes = calculate(sum(tb_content_metrics[Impressions (total)]))
+		formatString: 0
+		lineageTag: e1472325-67f7-4645-badb-55fa5be274ff
+
+	measure total_reacoes = calculate(sum(tb_content_metrics[Reactions (total)]))
+		formatString: 0
+		lineageTag: 61c13750-954d-4e34-b316-c68552fcde31
+
+	measure total_comentarios = calculate(sum(tb_content_metrics[Comments (total)]))
+		formatString: 0
+		lineageTag: 7e1ca214-c17d-4703-a9d7-493ae0e5aa74
+
+	measure total_repostagens = calculate(sum(tb_content_metrics[Reposts (total)]))
+		formatString: 0
+		lineageTag: 7b29053a-c4a5-4aff-87ed-11a983fe45b6
+
+	measure '(%) total_taxa_engajamento' = ([total_cliques]+[total_comentarios]+[total_repostagens]+[total_reacoes])/[total_impressoes]
+		lineageTag: d1890ecd-3976-48c7-92f2-af4006354b99
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Value
+		formatString: 0
+		lineageTag: f6e53641-4505-4c28-bd93-9cff8016f9d0
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '00. indicadores gerais (conteúdo)' = calculated
+		mode: import
+		source = {BLANK()}
+
+	annotation PBI_Id = 352db0e2a5c949a7ac981b2e376069bb
+

@@ -1,0 +1,37 @@
+relationship d0530942-af60-464b-a644-f4b9c76ab68d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: tb_content_metrics.Date
+	toColumn: LocalDateTable_e0adca73-7a4f-476c-887e-57227dda838e.Date
+
+relationship a92685fa-50b6-4c93-b83f-4f8e176a0ad0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: tb_visitors_metrics.Date
+	toColumn: LocalDateTable_35c657ac-96a3-4ac1-9e5e-cdacf56a1e60.Date
+
+relationship 2e9b7346-62aa-44cd-9a7b-cab2eb5a5f9c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: tb_followers_new.Date
+	toColumn: LocalDateTable_edd698e9-ec75-46fb-bed3-9ab5da8b015e.Date
+
+relationship 0a855abb-39a2-642a-298b-bd33bf395bb5
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: dim_calendario.Date
+	toColumn: tb_visitors_metrics.Date
+
+relationship a3041342-4059-a2d6-f6de-c135b983dc5a
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: dim_calendario.Date
+	toColumn: tb_followers_new.Date
+
+relationship 0748e1a2-6702-ce8e-3b28-26b9f5ecac2b
+	fromColumn: tb_content_posts.'Created date'
+	toColumn: dim_calendario.Date
+
+relationship 07414c65-29c7-2185-228d-e60af4f54c00
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: dim_calendario.Date
+	toColumn: tb_content_metrics.Date
+

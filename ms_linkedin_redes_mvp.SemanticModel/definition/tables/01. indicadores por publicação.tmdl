@@ -1,0 +1,79 @@
+table '01. indicadores por publicação'
+	lineageTag: 0d38249d-2245-4e1c-9c45-153ee1543d1b
+
+	measure post_total_impressoes = calculate(sum(tb_content_posts[Impressions]))
+		formatString: 0
+		lineageTag: c3c664db-c822-47dc-a034-f482868132d4
+
+	measure post_quantidade = Calculate(countrows(tb_content_posts))
+		formatString: 0
+		lineageTag: 1ef3b834-76b6-4ecb-9976-d4f36887bd17
+
+	measure post_total_visualizacoes = calculate(sum(tb_content_posts[Views]))
+		formatString: 0
+		lineageTag: 84c337dc-4707-4cac-bf1c-f59db72ec62d
+
+	measure post_cliques = Calculate(sum(tb_content_posts[Clicks]))
+		formatString: 0
+		lineageTag: 3595f249-0b29-4919-b8dc-d24f32ac7230
+
+	measure post_curtidas = calculate(sum(tb_content_posts[Likes]))
+		formatString: 0
+		lineageTag: 0c5a750e-73a6-450c-a49d-833b7303fb68
+
+	measure post_comentarios = calculate(sum(tb_content_posts[Comments]))
+		formatString: 0
+		lineageTag: 8631329c-b714-4b2f-a8b7-55d419d5cd9d
+
+	measure post_repostagens = calculate(sum(tb_content_posts[Reposts]))
+		formatString: 0
+		lineageTag: bb236a28-fd60-4951-b933-e95ec7190215
+
+	measure post_seguidores_gerados = CALCULATE(sum(tb_content_posts[Follows]))
+		formatString: 0
+		lineageTag: ab6ccb10-716e-4055-9c2c-7dac3d0c15fa
+
+	measure '(%) post_taxa_engajamento' = ([post_cliques]+[post_comentarios]+[post_repostagens])/[post_total_impressoes]
+		formatString: 0%;-0%;0%
+		lineageTag: c04449c6-069a-4ce4-9110-a0b97177f198
+
+	measure post_engajamento_absoluto = [post_cliques]+[post_curtidas]+[post_comentarios]+[post_repostagens]+[post_seguidores_gerados]
+		formatString: 0
+		lineageTag: 7db3799d-2d5f-4b74-949c-4a9c16773ba6
+
+	measure '(%) post_taxa_visualizacao' = [post_total_visualizacoes]/[post_total_impressoes]
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 7ec54ccb-198b-48ba-9f40-9649084ed837
+
+	measure '(%) post_taxa_reacao' = [post_curtidas]/[post_total_impressoes]
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 55889e6c-7f12-4575-bab5-c2ff2e2713af
+
+	measure '(%) post_taxa_conversacao' = [post_comentarios]/[post_total_impressoes]
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 1b522d19-c762-4acd-bbad-40ecbb63e5fe
+
+	measure '(%) post_taxa_amplificacao' = [post_repostagens]/[post_total_impressoes]
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 20e28ed5-801c-411f-8723-ace7898d50b0
+
+	measure post_seguidores_gerados_1000fl = ([post_seguidores_gerados]/[total_impressoes])*1000
+		lineageTag: eb171148-1664-4daf-9eaa-172a849707d8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Value
+		formatString: 0
+		lineageTag: 882bf4f7-a17a-4a72-be8f-c5fb498f3cc1
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '01. indicadores por publicação' = calculated
+		mode: import
+		source = {BLANK()}
+
+	annotation PBI_Id = 1d7101cba22049dba59aa84497aabae7
+

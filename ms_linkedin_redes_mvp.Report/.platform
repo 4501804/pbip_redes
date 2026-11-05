@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "ms_linkedin_redes_mvp"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0f15a217-f7b5-47ac-8abd-455bbab09440"
+  }
+}

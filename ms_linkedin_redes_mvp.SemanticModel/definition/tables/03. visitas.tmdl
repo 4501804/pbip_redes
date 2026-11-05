@@ -1,0 +1,26 @@
+table '03. visitas'
+	lineageTag: 1d45220d-1c61-46e6-b0b3-bc0135a41b4f
+
+	measure visitas_total_visualizacoes_pagina = calculate(sum(tb_visitors_metrics[Total page views (total)]))
+		formatString: 0
+		lineageTag: 89393fc8-6d27-4b67-8df4-386e3f5ff3dc
+
+	measure total_visitantes_unicos = calculate(sum(tb_visitors_metrics[Total unique visitors (total)]))
+		formatString: 0
+		lineageTag: 89b7f70d-953a-42e4-bd80-85b39ccb347c
+
+	column Value
+		formatString: 0
+		lineageTag: 2daf8ea4-dfce-49e5-8cee-352b80838c4f
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '03. visitas' = calculated
+		mode: import
+		source = {BLANK()}
+
+	annotation PBI_Id = 71176bf5610543d6bab5ed5697ef0eea
+
