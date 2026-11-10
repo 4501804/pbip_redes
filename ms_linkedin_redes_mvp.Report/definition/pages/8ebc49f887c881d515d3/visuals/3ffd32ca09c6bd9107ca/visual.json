@@ -1,0 +1,91 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "3ffd32ca09c6bd9107ca",
+  "position": {
+    "x": 630.31716671871379,
+    "y": 1.6541353383458626,
+    "z": 3000,
+    "height": 93.333333333333343,
+    "width": 290.92119275825348,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "00. indicadores gerais (conteúdo)"
+                    }
+                  },
+                  "Property": "total_reacoes"
+                }
+              },
+              "queryRef": "00. indicadores gerais (conteúdo).total_reacoes",
+              "nativeQueryRef": "Reações",
+              "displayName": "Reações"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "00. indicadores gerais (conteúdo)"
+                  }
+                },
+                "Property": "total_reacoes"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "value": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "00. indicadores gerais (conteúdo).total_reacoes"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "a43e936e600dd7bc1013"
+}

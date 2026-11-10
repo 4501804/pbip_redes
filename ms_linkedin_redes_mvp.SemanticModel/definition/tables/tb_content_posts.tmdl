@@ -176,6 +176,17 @@ table tb_content_posts
 
 		annotation SummarizationSetBy = Automatic
 
+	column post_title_resumo =
+			
+			LEFT(
+			    tb_content_posts[Post title],
+			    80
+			)
+		lineageTag: 382d0b67-dae4-4898-a2cd-ca7eead7b314
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition tb_content_posts = m
 		mode: import
 		source =

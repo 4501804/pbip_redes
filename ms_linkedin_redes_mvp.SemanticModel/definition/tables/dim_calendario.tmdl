@@ -2,7 +2,7 @@ table dim_calendario
 	lineageTag: 90108ccb-0a58-43c7-b43d-915456cf38fa
 
 	column Date
-		formatString: General Date
+		formatString: Short Date
 		lineageTag: 909c78b2-64c4-4f47-a465-72a5decd0aa5
 		summarizeBy: none
 		isNameInferred
@@ -10,13 +10,96 @@ table dim_calendario
 
 		annotation SummarizationSetBy = Automatic
 
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ano
+		formatString: 0
+		lineageTag: 80227b0e-a48a-45dd-af41-a0a49b9d9538
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Ano]
+
+		annotation SummarizationSetBy = Automatic
+
+	column trimestre
+		lineageTag: 2443a8d5-3b3b-482f-ac7c-c463e77b082f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Trimestre]
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes
+		dataType: string
+		lineageTag: 02a386d0-91dc-4136-a316-5658762eb8ca
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mes]
+		sortByColumn: mes_numero
+
+		annotation SummarizationSetBy = Automatic
+
+	column dia
+		formatString: 0
+		lineageTag: 9b9e85d2-6494-4dcc-8d06-d30567a43581
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Dia]
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes_numero
+		formatString: 0
+		lineageTag: 3f31561c-834d-472f-96a9-087a39b32787
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [mes_numero]
+
+		annotation SummarizationSetBy = Automatic
+
+	column ano_mes
+		lineageTag: efdb5e1a-a637-40dc-b834-74763e80e573
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [ano_mes]
+		sortByColumn: mes_numero
+
+		annotation SummarizationSetBy = Automatic
+
+	column dia_semana_numero
+		formatString: 0
+		lineageTag: 0e7c5b9b-1020-4f7e-be3b-b51b0de128b5
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [dia_semana_numero]
+
+		annotation SummarizationSetBy = Automatic
+
+	column dia_semana
+		lineageTag: 07d209a5-8ed9-487e-b55a-a8b42a49b214
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [dia_semana]
+
+		annotation SummarizationSetBy = Automatic
+
 	partition dim_calendario = calculated
 		mode: import
 		source =
 				
-				CALENDAR (
-				    DATE(2025,1,1),
-				    DATE(2026,12,31)
+				ADDCOLUMNS (
+				    CALENDAR (
+				        DATE ( 2025, 1, 1 ),
+				        DATE ( 2026, 12, 31 )
+				    ),
+				    "ano", YEAR ( [Date] ),
+				    "trimestre", "t" & QUARTER ( [Date] ),
+				    "mes_numero", MONTH ( [Date] ),
+				    "mes", FORMAT ( [Date], "MMMM" ),
+				    "ano_mes", FORMAT ( [Date], "YYYY-MM" ),
+				    "dia", DAY ( [Date] ),
+				    "dia_semana_numero", WEEKDAY ( [Date], 2 ),
+				    "dia_semana", FORMAT ( [Date], "dddd" )
 				)
 
 	annotation PBI_Id = 560a330d4b25484facc2fc0532f2b8e5

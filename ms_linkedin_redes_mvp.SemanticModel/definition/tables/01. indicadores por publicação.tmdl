@@ -62,6 +62,25 @@ table '01. indicadores por publicação'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure ranking_total_impressoes = ```
+			
+			RANKX(
+			    ALLSELECTED(tb_content_posts[post_title_resumo]),
+			    [(%) post_taxa_engajamento],
+			    ,
+			    DESC,
+			    DENSE
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 84504e0e-c962-483c-aa85-967c3d6ce851
+
+	measure ranking_total_impressoes_exibicao =
+			
+			FORMAT([ranking_total_impressoes], "0") & "º"
+		lineageTag: e0f33426-1343-432e-be6d-302eeeccd694
+
 	column Value
 		formatString: 0
 		lineageTag: 882bf4f7-a17a-4a72-be8f-c5fb498f3cc1

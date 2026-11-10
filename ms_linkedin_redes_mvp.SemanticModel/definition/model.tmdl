@@ -29,3 +29,5 @@ ref table '01. indicadores por publicação'
 ref table '02. seguidores'
 ref table '03. visitas'
 
+ref cultureInfo en-US
+

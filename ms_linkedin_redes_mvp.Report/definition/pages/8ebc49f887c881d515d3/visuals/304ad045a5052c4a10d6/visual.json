@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "304ad045a5052c4a10d6",
+  "position": {
+    "x": 942.0184446739853,
+    "y": 1.6541353383458626,
+    "z": 4000,
+    "height": 93.333333333333343,
+    "width": 290.92119275825348,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "00. indicadores gerais (conteúdo)"
+                    }
+                  },
+                  "Property": "total_comentarios"
+                }
+              },
+              "queryRef": "00. indicadores gerais (conteúdo).total_comentarios",
+              "nativeQueryRef": "Comentários",
+              "displayName": "Comentários"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "00. indicadores gerais (conteúdo)"
+                  }
+                },
+                "Property": "total_comentarios"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "a43e936e600dd7bc1013"
+}

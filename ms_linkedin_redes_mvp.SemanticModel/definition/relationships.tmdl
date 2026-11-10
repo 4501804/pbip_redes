@@ -25,13 +25,13 @@ relationship a3041342-4059-a2d6-f6de-c135b983dc5a
 	fromColumn: dim_calendario.Date
 	toColumn: tb_followers_new.Date
 
-relationship 0748e1a2-6702-ce8e-3b28-26b9f5ecac2b
-	fromColumn: tb_content_posts.'Created date'
-	toColumn: dim_calendario.Date
-
 relationship 07414c65-29c7-2185-228d-e60af4f54c00
 	crossFilteringBehavior: bothDirections
 	fromCardinality: one
 	fromColumn: dim_calendario.Date
 	toColumn: tb_content_metrics.Date
+
+relationship 0748e1a2-6702-ce8e-3b28-26b9f5ecac2b
+	fromColumn: tb_content_posts.'Created date'
+	toColumn: dim_calendario.Date
 
