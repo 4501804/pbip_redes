@@ -6,11 +6,12 @@
     "y": 170.48872180451119,
     "z": 11093,
     "height": 94.98746867167921,
-    "width": 1859.3107769423561,
+    "width": 1544.6409153875109,
     "tabOrder": 11000
   },
   "visualGroup": {
     "displayName": "posts_linkedin_cartoes",
     "groupMode": "ScaleMode"
-  }
+  },
+  "isHidden": true
 }

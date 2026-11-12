@@ -1074,46 +1074,6 @@
               ]
             }
           },
-          "c267c0a65b284d80dc41": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "b8a2c14e6a489c475d25",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
-                        }
-                      },
-                      "Property": "(%) total_taxa_engajamento"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "cardVisual",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
-                        }
-                      },
-                      "Property": "(%) total_taxa_engajamento"
-                    }
-                  }
-                }
-              ]
-            }
-          },
           "00edb252e1b7c9d9d8b9": {
             "filters": {
               "byExpr": [

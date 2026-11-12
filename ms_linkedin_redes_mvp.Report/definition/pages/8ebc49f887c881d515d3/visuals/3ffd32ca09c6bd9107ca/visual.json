@@ -20,15 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "00. indicadores gerais (conteúdo)"
+                      "Entity": "01. indicadores por publicação"
                     }
                   },
-                  "Property": "total_reacoes"
+                  "Property": "(%) post_taxa_conversacao"
                 }
               },
-              "queryRef": "00. indicadores gerais (conteúdo).total_reacoes",
-              "nativeQueryRef": "Reações",
-              "displayName": "Reações"
+              "queryRef": "01. indicadores por publicação.(%) post_taxa_conversacao",
+              "nativeQueryRef": "(%) post_taxa_conversacao"
             }
           ]
         }
@@ -40,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "00. indicadores gerais (conteúdo)"
+                    "Entity": "01. indicadores por publicação"
                   }
                 },
-                "Property": "total_reacoes"
+                "Property": "(%) post_taxa_conversacao"
               }
             },
             "direction": "Descending"
@@ -51,24 +50,6 @@
         ],
         "isDefaultSort": true
       }
-    },
-    "objects": {
-      "value": [
-        {
-          "properties": {
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "00. indicadores gerais (conteúdo).total_reacoes"
-          }
-        }
-      ]
     },
     "visualContainerObjects": {
       "border": [

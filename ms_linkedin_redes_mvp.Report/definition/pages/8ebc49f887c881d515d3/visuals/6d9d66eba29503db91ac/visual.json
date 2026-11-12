@@ -23,12 +23,11 @@
                       "Entity": "00. indicadores gerais (conteúdo)"
                     }
                   },
-                  "Property": "total_comentarios"
+                  "Property": "total_impressoes"
                 }
               },
-              "queryRef": "00. indicadores gerais (conteúdo).total_comentarios",
-              "nativeQueryRef": "Comentários",
-              "displayName": "Comentários"
+              "queryRef": "00. indicadores gerais (conteúdo).total_impressoes",
+              "nativeQueryRef": "total_impressoes"
             }
           ]
         }
@@ -43,7 +42,7 @@
                     "Entity": "00. indicadores gerais (conteúdo)"
                   }
                 },
-                "Property": "total_comentarios"
+                "Property": "total_impressoes"
               }
             },
             "direction": "Descending"

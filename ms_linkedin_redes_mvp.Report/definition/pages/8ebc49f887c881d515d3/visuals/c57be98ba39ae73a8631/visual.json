@@ -20,15 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "02. seguidores"
+                      "Entity": "00. indicadores gerais (conteúdo)"
                     }
                   },
-                  "Property": "seguidores_novos"
+                  "Property": "total_reacoes"
                 }
               },
-              "queryRef": "02. seguidores.seguidores_novos",
-              "nativeQueryRef": "Novos seguidores",
-              "displayName": "Novos seguidores"
+              "queryRef": "00. indicadores gerais (conteúdo).total_reacoes",
+              "nativeQueryRef": "total_reacoes"
             }
           ]
         }
@@ -40,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "02. seguidores"
+                    "Entity": "00. indicadores gerais (conteúdo)"
                   }
                 },
-                "Property": "seguidores_novos"
+                "Property": "total_reacoes"
               }
             },
             "direction": "Descending"
@@ -51,24 +50,6 @@
         ],
         "isDefaultSort": true
       }
-    },
-    "objects": {
-      "value": [
-        {
-          "properties": {
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "02. seguidores.seguidores_novos"
-          }
-        }
-      ]
     },
     "visualContainerObjects": {
       "title": [

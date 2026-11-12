@@ -39,15 +39,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "00. indicadores gerais (conteúdo)"
+                      "Entity": "01. indicadores por publicação"
                     }
                   },
-                  "Property": "(%) total_taxa_engajamento"
+                  "Property": "(%) post_taxa_visualizacao"
                 }
               },
-              "queryRef": "00. indicadores gerais (conteúdo).(%) total_taxa_engajamento",
-              "nativeQueryRef": "(%) total_taxa_engajamento",
-              "format": "0.0%;-0.0%;0.0%"
+              "queryRef": "01. indicadores por publicação.(%) post_taxa_visualizacao",
+              "nativeQueryRef": "(%) post_taxa_visualizacao"
             }
           ]
         }

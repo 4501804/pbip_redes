@@ -23,13 +23,12 @@
                       "Entity": "00. indicadores gerais (conteúdo)"
                     }
                   },
-                  "Property": "total_impressoes"
+                  "Property": "(%) total_taxa_engajamento"
                 }
               },
-              "queryRef": "00. indicadores gerais (conteúdo).total_impressoes",
-              "nativeQueryRef": "Impressões",
-              "displayName": "Impressões",
-              "format": "#,0"
+              "queryRef": "00. indicadores gerais (conteúdo).(%) total_taxa_engajamento",
+              "nativeQueryRef": "(%) total_taxa_engajamento",
+              "format": "0.0%;-0.0%;0.0%"
             }
           ]
         }
@@ -44,7 +43,7 @@
                     "Entity": "00. indicadores gerais (conteúdo)"
                   }
                 },
-                "Property": "total_impressoes"
+                "Property": "(%) total_taxa_engajamento"
               }
             },
             "direction": "Descending"
@@ -80,7 +79,7 @@
             }
           },
           "selector": {
-            "metadata": "00. indicadores gerais (conteúdo).total_impressoes"
+            "metadata": "00. indicadores gerais (conteúdo).(%) total_taxa_engajamento"
           }
         }
       ],

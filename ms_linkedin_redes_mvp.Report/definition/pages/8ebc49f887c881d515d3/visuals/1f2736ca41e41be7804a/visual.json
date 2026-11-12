@@ -12,5 +12,6 @@
   "visualGroup": {
     "displayName": "posts_linkedin_graficos",
     "groupMode": "ScaleMode"
-  }
+  },
+  "isHidden": true
 }

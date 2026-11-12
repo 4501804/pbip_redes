@@ -46,9 +46,7 @@
                 }
               },
               "queryRef": "00. indicadores gerais (conteúdo).total_impressoes",
-              "nativeQueryRef": "Impressões",
-              "displayName": "Impressões",
-              "format": "#,0"
+              "nativeQueryRef": "total_impressoes"
             }
           ]
         }

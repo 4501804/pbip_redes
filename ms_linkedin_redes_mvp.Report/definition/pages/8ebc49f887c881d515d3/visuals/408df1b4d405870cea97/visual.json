@@ -27,8 +27,7 @@
                 }
               },
               "queryRef": "00. indicadores gerais (conteúdo).total_cliques",
-              "nativeQueryRef": "Cliques",
-              "displayName": "Cliques"
+              "nativeQueryRef": "total_cliques"
             }
           ]
         }
@@ -66,20 +65,6 @@
           },
           "selector": {
             "metadata": "00. indicadores gerais (conteúdo).total_reacoes"
-          }
-        },
-        {
-          "properties": {
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "00. indicadores gerais (conteúdo).total_cliques"
           }
         }
       ]

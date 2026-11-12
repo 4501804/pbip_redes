@@ -39,15 +39,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "02. seguidores"
+                      "Entity": "01. indicadores por publicação"
                     }
                   },
-                  "Property": "seguidores_novos"
+                  "Property": "(%) post_taxa_conversacao"
                 }
               },
-              "queryRef": "02. seguidores.seguidores_novos",
-              "nativeQueryRef": "Novos seguidores",
-              "displayName": "Novos seguidores"
+              "queryRef": "01. indicadores por publicação.(%) post_taxa_conversacao",
+              "nativeQueryRef": "(%) post_taxa_conversacao"
             }
           ]
         }

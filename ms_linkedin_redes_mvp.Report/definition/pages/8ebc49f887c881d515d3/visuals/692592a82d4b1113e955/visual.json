@@ -20,16 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "00. indicadores gerais (conteúdo)"
+                      "Entity": "01. indicadores por publicação"
                     }
                   },
-                  "Property": "total_impressoes"
+                  "Property": "(%) post_taxa_engajamento"
                 }
               },
-              "queryRef": "00. indicadores gerais (conteúdo).total_impressoes",
-              "nativeQueryRef": "Impressões",
-              "displayName": "Impressões",
-              "format": "#,0"
+              "queryRef": "01. indicadores por publicação.(%) post_taxa_engajamento",
+              "nativeQueryRef": "(%) post_taxa_engajamento"
             }
           ]
         }
@@ -41,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "00. indicadores gerais (conteúdo)"
+                    "Entity": "01. indicadores por publicação"
                   }
                 },
-                "Property": "total_impressoes"
+                "Property": "(%) post_taxa_engajamento"
               }
             },
             "direction": "Descending"
@@ -67,20 +65,6 @@
           },
           "selector": {
             "metadata": "00. indicadores gerais (conteúdo).total_reacoes"
-          }
-        },
-        {
-          "properties": {
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "00. indicadores gerais (conteúdo).total_impressoes"
           }
         }
       ],

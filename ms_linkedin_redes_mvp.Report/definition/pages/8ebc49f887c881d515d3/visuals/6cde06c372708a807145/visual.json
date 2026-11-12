@@ -23,12 +23,11 @@
                       "Entity": "00. indicadores gerais (conteúdo)"
                     }
                   },
-                  "Property": "total_reacoes"
+                  "Property": "total_comentarios"
                 }
               },
-              "queryRef": "00. indicadores gerais (conteúdo).total_reacoes",
-              "nativeQueryRef": "Reações",
-              "displayName": "Reações"
+              "queryRef": "00. indicadores gerais (conteúdo).total_comentarios",
+              "nativeQueryRef": "total_comentarios"
             }
           ]
         }
@@ -43,7 +42,7 @@
                     "Entity": "00. indicadores gerais (conteúdo)"
                   }
                 },
-                "Property": "total_reacoes"
+                "Property": "total_comentarios"
               }
             },
             "direction": "Descending"
@@ -51,24 +50,6 @@
         ],
         "isDefaultSort": true
       }
-    },
-    "objects": {
-      "value": [
-        {
-          "properties": {
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "00. indicadores gerais (conteúdo).total_reacoes"
-          }
-        }
-      ]
     },
     "visualContainerObjects": {
       "border": [

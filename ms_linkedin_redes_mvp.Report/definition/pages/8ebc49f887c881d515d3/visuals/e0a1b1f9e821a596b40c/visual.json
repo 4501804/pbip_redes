@@ -23,13 +23,11 @@
                       "Entity": "00. indicadores gerais (conteúdo)"
                     }
                   },
-                  "Property": "(%) total_taxa_engajamento"
+                  "Property": "total_repostagens"
                 }
               },
-              "queryRef": "00. indicadores gerais (conteúdo).(%) total_taxa_engajamento",
-              "nativeQueryRef": "(%) Taxa de engajamento",
-              "displayName": "(%) Taxa de engajamento",
-              "format": "0.0%;-0.0%;0.0%"
+              "queryRef": "00. indicadores gerais (conteúdo).total_repostagens",
+              "nativeQueryRef": "total_repostagens"
             }
           ]
         }
@@ -44,7 +42,7 @@
                     "Entity": "00. indicadores gerais (conteúdo)"
                   }
                 },
-                "Property": "(%) total_taxa_engajamento"
+                "Property": "total_repostagens"
               }
             },
             "direction": "Descending"

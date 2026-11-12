@@ -20,15 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "00. indicadores gerais (conteúdo)"
+                      "Entity": "01. indicadores por publicação"
                     }
                   },
-                  "Property": "total_comentarios"
+                  "Property": "(%) post_taxa_reacao"
                 }
               },
-              "queryRef": "00. indicadores gerais (conteúdo).total_comentarios",
-              "nativeQueryRef": "Comentários",
-              "displayName": "Comentários"
+              "queryRef": "01. indicadores por publicação.(%) post_taxa_reacao",
+              "nativeQueryRef": "(%) post_taxa_reacao"
             }
           ]
         }
@@ -40,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "00. indicadores gerais (conteúdo)"
+                    "Entity": "01. indicadores por publicação"
                   }
                 },
-                "Property": "total_comentarios"
+                "Property": "(%) post_taxa_reacao"
               }
             },
             "direction": "Descending"
