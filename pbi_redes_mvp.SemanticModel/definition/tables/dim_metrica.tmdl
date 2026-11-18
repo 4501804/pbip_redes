@@ -1,0 +1,38 @@
+table dim_metrica
+	lineageTag: 3e4fcabd-d9bc-43b7-87d2-6b8ba9171bf1
+
+	column metrica
+		lineageTag: 378ee9c9-eac9-4c45-ba3c-3cb3335835d5
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Metrica]
+
+		annotation SummarizationSetBy = Automatic
+
+	column ordem
+		formatString: 0
+		lineageTag: 43a4b24f-18a6-438e-811e-127870c8c33e
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [ordem]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_metrica = calculated
+		mode: import
+		source =
+				
+				DATATABLE(
+				    "ordem", INTEGER,
+				    "metrica", STRING,
+				    {
+				        {1, "Engajamento"},
+				        {2, "Reação"},
+				        {3, "Amplificação"},
+				        {4, "Conversão"},
+				        {5, "Visualização"}
+				    }
+				)
+
+	annotation PBI_Id = 8bcd0e86a6e843be8919b4259d1af23a
+

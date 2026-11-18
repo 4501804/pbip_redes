@@ -1,0 +1,181 @@
+table tb_instagram_posts
+	lineageTag: 1a58945f-2557-4276-976b-f40125f0a5d1
+
+	column 'Identificação do post'
+		dataType: int64
+		formatString: 0
+		lineageTag: 342b3d72-c324-4ce0-92db-2849a68eb1d4
+		summarizeBy: sum
+		sourceColumn: Identificação do post
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Identificação da conta'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4711d203-e5fe-43f1-944e-33847daa751e
+		summarizeBy: sum
+		sourceColumn: Identificação da conta
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nome de usuário da conta'
+		dataType: string
+		lineageTag: b8ac3a82-4a86-45d6-822a-fca99a4ff54d
+		summarizeBy: none
+		sourceColumn: Nome de usuário da conta
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nome da conta'
+		dataType: string
+		lineageTag: dd3d2dcc-7256-43be-aaa0-998288674da4
+		summarizeBy: none
+		sourceColumn: Nome da conta
+
+		annotation SummarizationSetBy = Automatic
+
+	column Descrição
+		dataType: string
+		lineageTag: 568fa138-0173-4ad9-8917-e9fff56abcb0
+		summarizeBy: none
+		sourceColumn: Descrição
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Duração (s)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 62a464aa-8b47-4e36-b605-12204dab6c48
+		summarizeBy: sum
+		sourceColumn: Duração (s)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Horário de publicação'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 8d85ff9a-7355-43ee-9e13-80209d7e0105
+		summarizeBy: none
+		sourceColumn: Horário de publicação
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Link permanente'
+		dataType: string
+		lineageTag: 45e08d20-22b4-49b9-b14c-d1e5fd81afde
+		summarizeBy: none
+		sourceColumn: Link permanente
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de post'
+		dataType: string
+		lineageTag: ed0a4ea4-c72c-41ae-b554-57448037e6b4
+		summarizeBy: none
+		sourceColumn: Tipo de post
+
+		annotation SummarizationSetBy = Automatic
+
+	column Visualizações
+		dataType: int64
+		formatString: 0
+		lineageTag: 69dff829-d200-4bd1-b45b-3bc1d8e54c45
+		summarizeBy: sum
+		sourceColumn: Visualizações
+
+		annotation SummarizationSetBy = Automatic
+
+	column Alcance
+		dataType: int64
+		formatString: 0
+		lineageTag: 2123fe82-0178-432b-928c-0322a2c68a5c
+		summarizeBy: sum
+		sourceColumn: Alcance
+
+		annotation SummarizationSetBy = Automatic
+
+	column Curtidas
+		dataType: int64
+		formatString: 0
+		lineageTag: d1de5292-5a31-49a3-bd0c-fbe3ef01f327
+		summarizeBy: sum
+		sourceColumn: Curtidas
+
+		annotation SummarizationSetBy = Automatic
+
+	column Compartilhamentos
+		dataType: int64
+		formatString: 0
+		lineageTag: 7d12122e-72a9-4ee8-aec7-161f6193b6b3
+		summarizeBy: sum
+		sourceColumn: Compartilhamentos
+
+		annotation SummarizationSetBy = Automatic
+
+	column Seguimentos
+		dataType: int64
+		formatString: 0
+		lineageTag: c922ba63-361a-4274-8f30-a8432f683979
+		summarizeBy: sum
+		sourceColumn: Seguimentos
+
+		annotation SummarizationSetBy = Automatic
+
+	column Comentários
+		dataType: int64
+		formatString: 0
+		lineageTag: 3bbde2a1-b5a4-4935-b4a5-2cfb99519499
+		summarizeBy: sum
+		sourceColumn: Comentários
+
+		annotation SummarizationSetBy = Automatic
+
+	column Salvamentos
+		dataType: int64
+		formatString: 0
+		lineageTag: 146871ce-9199-435f-ac1d-a28cb2a45e2b
+		summarizeBy: sum
+		sourceColumn: Salvamentos
+
+		annotation SummarizationSetBy = Automatic
+
+	partition tb_instagram_posts = m
+		mode: import
+		source =
+				let
+				    Fonte = SharePoint.Files(
+				        "https://mackenzie365.sharepoint.com/sites/1001000598_Redes",
+				        [ApiVersion = 15]
+				    ),
+				
+				    PastaInstagram = Table.SelectRows(
+				        Fonte,
+				        each Text.Contains(
+				            [Folder Path],
+				            "/Documentos Compartilhados/Dados/2026/Instagram/"
+				        )
+				    ),
+				
+				    OrdenadoPorData = Table.Sort(
+				        PastaInstagram,
+				        {{"Date modified", Order.Descending}}
+				    ),
+				
+				    ArquivoMaisRecente = Table.FirstN(
+				        OrdenadoPorData,
+				        1
+				    ),
+				  Navegação = ArquivoMaisRecente{[Name = "Jan-01-2026_Nov-12-2026_1421407346646773.csv", #"Folder Path" = "https://mackenzie365.sharepoint.com/sites/1001000598_Redes/Documentos Compartilhados/Dados/2026/Instagram/"]}[Content],
+				  #"CSV Importado" = Csv.Document(Navegação, [Delimiter = ",", Columns = 18, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				  #"Cabeçalhos promovidos" = Table.PromoteHeaders(#"CSV Importado", [PromoteAllScalars = true]),
+				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(#"Cabeçalhos promovidos", {{"Identificação do post", Int64.Type}, {"Identificação da conta", Int64.Type}, {"Nome de usuário da conta", type text}, {"Nome da conta", type text}, {"Descrição", type text}, {"Duração (s)", Int64.Type}, {"Horário de publicação", type datetime}, {"Link permanente", type text}, {"Tipo de post", type text}, {"Comentário de dados", type text}, {"Data", type text}, {"Visualizações", Int64.Type}, {"Alcance", Int64.Type}, {"Curtidas", Int64.Type}, {"Compartilhamentos", Int64.Type}, {"Seguimentos", Int64.Type}, {"Comentários", Int64.Type}, {"Salvamentos", Int64.Type}}, "pt-BR"),
+				  #"Colunas removidas" = Table.RemoveColumns(#"Tipo de coluna alterado", {"Data", "Comentário de dados"})
+				
+				in
+				    #"Colunas removidas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

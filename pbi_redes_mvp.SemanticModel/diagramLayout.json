@@ -1,0 +1,178 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 1.758104542892313
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1628.0048067182818,
+            "y": 360.02501580433284
+          },
+          "nodeIndex": "tb_competitors",
+          "nodeLineageTag": "6800e3d7-7833-4855-8153-03a8e15dad8d",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1126.7287943996398,
+            "y": 356.25538047706067
+          },
+          "nodeIndex": "tb_content_metrics",
+          "nodeLineageTag": "7fe6c8a4-81b1-4a5a-8dd2-5c7e7cedc918",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 876.686215969217,
+            "y": 357.19447017496475
+          },
+          "nodeIndex": "tb_content_posts",
+          "nodeLineageTag": "be000858-91b8-4f0a-90bb-bc03af7dec0e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 621.654700540917,
+            "y": 357.83820971874707
+          },
+          "nodeIndex": "tb_followers_new",
+          "nodeLineageTag": "88359043-4809-44d5-bceb-efcd4ff39a29",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 366.04986808701557,
+            "y": 355.32434525560939
+          },
+          "nodeIndex": "tb_visitors_metrics",
+          "nodeLineageTag": "f9172c89-8efb-47d5-b2cb-510b6fda3dd8",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "dim_calendario",
+          "nodeLineageTag": "90108ccb-0a58-43c7-b43d-915456cf38fa",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 363.22781166389689,
+            "y": 676.69792028890618
+          },
+          "nodeIndex": "00. indicadores gerais (conteúdo)",
+          "nodeLineageTag": "85e84507-7be9-4e8c-b8a4-39877c95a25e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 617.312554879217,
+            "y": 678.56679161951627
+          },
+          "nodeIndex": "01. indicadores por publicação",
+          "nodeLineageTag": "0d38249d-2245-4e1c-9c45-153ee1543d1b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 12
+        },
+        {
+          "location": {
+            "x": 879.5236388103184,
+            "y": 678.27993380202622
+          },
+          "nodeIndex": "02. seguidores",
+          "nodeLineageTag": "75d8fa83-4844-4421-8aac-6131cae94f4a",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1128.5223501039607,
+            "y": 680.14192253495014
+          },
+          "nodeIndex": "03. visitas",
+          "nodeLineageTag": "1d45220d-1c61-46e6-b0b3-bc0135a41b4f",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1375.4638003934947,
+            "y": 358.65332675003185
+          },
+          "nodeIndex": "tb_instagram_posts",
+          "nodeLineageTag": "1a58945f-2557-4276-976b-f40125f0a5d1",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 252.16573412285942
+          },
+          "nodeIndex": "dim_metrica",
+          "nodeLineageTag": "3e4fcabd-d9bc-43b7-87d2-6b8ba9171bf1",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 10
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 56.879438941376527,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}
