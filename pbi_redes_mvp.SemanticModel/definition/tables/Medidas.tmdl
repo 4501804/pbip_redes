@@ -132,6 +132,34 @@ table Medidas
 		formatString: 0
 		lineageTag: 89393fc8-6d27-4b67-8df4-386e3f5ff3dc
 
+	measure insta_post_comentarios = calculate(sum(tb_instagram_posts[Comentários]))
+		formatString: 0
+		lineageTag: c76be598-f4b4-4931-b29d-31369aacc37c
+
+	measure insta_post_curtidas = calculate(sum(tb_instagram_posts[Curtidas]))
+		formatString: 0
+		lineageTag: 4122763f-aa1e-4ce8-9bfd-3823cf18de95
+
+	measure insta_post_compartilhamentos = calculate(sum(tb_instagram_posts[Compartilhamentos]))
+		formatString: 0
+		lineageTag: 85414922-6785-4853-81af-b3adb7d2bfe5
+
+	measure insta_post_salvamentos = calculate(sum(tb_instagram_posts[Salvamentos]))
+		formatString: 0
+		lineageTag: 3da9c5eb-6b60-4084-8a94-77d3dbe32894
+
+	measure insta_post_seguimentos = calculate(sum(tb_instagram_posts[Seguimentos]))
+		formatString: 0
+		lineageTag: f464b67b-00f7-4bf5-b5bc-6c9e9becaaaa
+
+	measure insta_post_visualizacoes = calculate(sum(tb_instagram_posts[Visualizações]))
+		formatString: 0
+		lineageTag: 353e96bb-9d66-4552-b959-bcb891c93337
+
+	measure insta_post_alcance = calculate(sum(tb_instagram_posts[Alcance]))
+		formatString: 0
+		lineageTag: d93bb043-7291-4fa5-9028-b1bce61d4f8c
+
 	column 'Coluna 1'
 		dataType: string
 		isHidden
