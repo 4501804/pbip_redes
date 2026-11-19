@@ -4,7 +4,7 @@
   "position": {
     "x": 0,
     "y": 0,
-    "z": 1000,
+    "z": 2000,
     "height": 60.000000000000007,
     "width": 382.85714285714289,
     "tabOrder": 4000
@@ -61,7 +61,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'geral_linkedin_titulo'"
+                  "Value": "'titulo'"
                 }
               }
             }

@@ -2,9 +2,9 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "dbc181dcdece7ec92885",
   "position": {
-    "x": 0,
+    "x": 0.13710747456876504,
     "y": 0,
-    "z": 1000,
+    "z": 2000,
     "height": 60.000000000000007,
     "width": 382.85714285714289,
     "tabOrder": 0
@@ -61,7 +61,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'posts_linkedin_titulo'"
+                  "Value": "'titulo'"
                 }
               }
             }

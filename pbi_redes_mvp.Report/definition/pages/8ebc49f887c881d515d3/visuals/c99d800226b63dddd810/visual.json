@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "c99d800226b63dddd810",
   "position": {
-    "x": 33.333333333333336,
-    "y": 615,
-    "z": 1000,
-    "height": 420,
+    "x": 1.3333333333333357,
+    "y": 270,
+    "z": 0,
+    "height": 480,
     "width": 1858.3333333333335,
-    "tabOrder": 7000
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -46,7 +46,8 @@
                 }
               },
               "queryRef": "00. indicadores gerais (conteúdo).total_cliques",
-              "nativeQueryRef": "total_cliques"
+              "nativeQueryRef": "Cliques",
+              "displayName": "Cliques"
             },
             {
               "field": {
@@ -60,7 +61,8 @@
                 }
               },
               "queryRef": "00. indicadores gerais (conteúdo).total_comentarios",
-              "nativeQueryRef": "total_comentarios"
+              "nativeQueryRef": "Comentários",
+              "displayName": "Comentários"
             },
             {
               "field": {
@@ -74,7 +76,8 @@
                 }
               },
               "queryRef": "00. indicadores gerais (conteúdo).total_reacoes",
-              "nativeQueryRef": "total_reacoes"
+              "nativeQueryRef": "Reações",
+              "displayName": "Reações"
             },
             {
               "field": {
@@ -88,7 +91,8 @@
                 }
               },
               "queryRef": "00. indicadores gerais (conteúdo).total_repostagens",
-              "nativeQueryRef": "total_repostagens"
+              "nativeQueryRef": "Repostagens",
+              "displayName": "Repostagens"
             }
           ]
         }
@@ -256,5 +260,6 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "parentGroupName": "49399191b04a323167b6"
 }

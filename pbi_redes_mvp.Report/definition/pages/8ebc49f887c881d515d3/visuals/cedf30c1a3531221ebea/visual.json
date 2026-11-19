@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "00. indicadores gerais (conteúdo).(%) total_taxa_engajamento",
-              "nativeQueryRef": "(%) total_taxa_engajamento",
+              "nativeQueryRef": "(%) Taxa de engajamento",
+              "displayName": "(%) Taxa de engajamento",
               "format": "0.0%;-0.0%;0.0%"
             }
           ]

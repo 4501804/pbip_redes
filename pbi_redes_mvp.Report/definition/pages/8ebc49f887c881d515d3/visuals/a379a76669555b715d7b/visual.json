@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "a379a76669555b715d7b",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 2000,
+    "height": 160,
+    "width": 1920,
+    "tabOrder": 6001
+  },
+  "visualGroup": {
+    "displayName": "linkedin_pagina",
+    "groupMode": "ScaleMode"
+  }
+}

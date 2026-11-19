@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "00. indicadores gerais (conteúdo).total_reacoes",
-              "nativeQueryRef": "total_reacoes"
+              "nativeQueryRef": "Reações",
+              "displayName": "Reações"
             }
           ]
         }

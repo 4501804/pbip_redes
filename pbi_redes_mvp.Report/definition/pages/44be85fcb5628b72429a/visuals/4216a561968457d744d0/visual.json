@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "4216a561968457d744d0",
+  "position": {
+    "x": 31.666666666666668,
+    "y": 283.33333333333337,
+    "z": 6000,
+    "height": 233.33333333333334,
+    "width": 1860,
+    "tabOrder": 9000
+  },
+  "visualGroup": {
+    "displayName": "posts_linkedin_graficos",
+    "groupMode": "ScaleMode"
+  }
+}

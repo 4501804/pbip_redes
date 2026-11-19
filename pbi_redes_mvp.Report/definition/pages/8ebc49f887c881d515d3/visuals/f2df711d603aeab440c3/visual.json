@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "f2df711d603aeab440c3",
   "position": {
-    "x": 31.428571428571431,
+    "x": 31.291463954002666,
     "y": 10,
-    "z": 8000,
-    "height": 140,
-    "width": 1855.714285714286,
-    "tabOrder": 5000
+    "z": 0,
+    "height": 1025,
+    "width": 1860.3752027126641,
+    "tabOrder": 4000
   },
   "visualGroup": {
     "displayName": "linkedin_posts",

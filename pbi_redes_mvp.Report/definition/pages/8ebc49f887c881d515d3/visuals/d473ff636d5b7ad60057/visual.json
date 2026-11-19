@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "d473ff636d5b7ad60057",
   "position": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
-    "height": 305.71428571428572,
-    "width": 605.69515306122446,
+    "x": 1254,
+    "y": 1,
+    "z": 1000,
+    "height": 243.33333333333334,
+    "width": 605.61755952380952,
     "tabOrder": 2000
   },
   "visual": {
@@ -46,7 +46,8 @@
                 }
               },
               "queryRef": "00. indicadores gerais (conteúdo).total_impressoes",
-              "nativeQueryRef": "total_impressoes"
+              "nativeQueryRef": "Impressões",
+              "displayName": "Impressões"
             }
           ]
         }

@@ -2,15 +2,17 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "1f2736ca41e41be7804a",
   "position": {
-    "x": 31.666666666666668,
-    "y": 283.33333333333337,
-    "z": 6000,
+    "x": 0.37520271266400229,
+    "y": 273.33333333333337,
+    "z": 1000,
     "height": 233.33333333333334,
-    "width": 1860
+    "width": 1860,
+    "tabOrder": 9000
   },
   "visualGroup": {
-    "displayName": "posts_linkedin_graficos",
+    "displayName": "linkedin_post_graficos",
     "groupMode": "ScaleMode"
   },
+  "parentGroupName": "f2df711d603aeab440c3",
   "isHidden": true
 }

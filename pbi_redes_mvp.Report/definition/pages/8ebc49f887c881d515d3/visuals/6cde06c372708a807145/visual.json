@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "00. indicadores gerais (conteúdo).total_comentarios",
-              "nativeQueryRef": "total_comentarios"
+              "nativeQueryRef": "Comentários",
+              "displayName": "Comentários"
             }
           ]
         }

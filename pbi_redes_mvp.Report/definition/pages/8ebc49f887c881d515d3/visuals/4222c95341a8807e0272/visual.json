@@ -4,10 +4,10 @@
   "position": {
     "x": 31.428571428571431,
     "y": 92.857142857142861,
-    "z": 4000,
+    "z": 2000,
     "height": 67.142857142857153,
     "width": 291.42857142857144,
-    "tabOrder": 3000
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "slicer",
@@ -133,6 +133,7 @@
     },
     "drillFilterOtherVisuals": true
   },
+  "parentGroupName": "a379a76669555b715d7b",
   "filterConfig": {
     "filters": [
       {

@@ -5886,6 +5886,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.582
 			          }
+			        },
+			        {
+			          "Impressões": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -5928,6 +5938,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Reações": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -5972,6 +5992,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.582
 			          }
+			        },
+			        {
+			          "Comentários": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -6015,6 +6045,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.582
 			          }
+			        },
+			        {
+			          "Repostagens": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -6030,6 +6070,16 @@ cultureInfo en-US
 			        {
 			          "(%) total_taxa_engajamento": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "(%) Taxa de engajamento": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -7664,6 +7714,83 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "entity_01__indicadores_por_publicação.vl_metrica_linkedin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "01. indicadores por publicação",
+			          "ConceptualProperty": "vl_metrica_linkedin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vl metrica linkedin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vl_metrica_linkedin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_metrica": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_metrica"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim metrica": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_metrica": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_metrica.metrica": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_metrica",
+			          "ConceptualProperty": "metrica"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "metrica": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_metrica.ordem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_metrica",
+			          "ConceptualProperty": "ordem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ordem": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
@@ -8416,6 +8543,138 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "tb_content_metrics_have_dim_calendarios"
+			        }
+			      ]
+			    },
+			    "dim_metrica_has_ordem": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_metrica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_metrica": {
+			          "Target": {
+			            "Entity": "dim_metrica"
+			          }
+			        },
+			        "dim_metrica.ordem": {
+			          "Target": {
+			            "Entity": "dim_metrica.ordem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_metrica"
+			            },
+			            "Object": {
+			              "Role": "dim_metrica.ordem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_metricas_have_ordems"
+			        }
+			      ]
+			    },
+			    "dim_metrica_has_metrica": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_metrica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_metrica": {
+			          "Target": {
+			            "Entity": "dim_metrica"
+			          }
+			        },
+			        "dim_metrica.metrica": {
+			          "Target": {
+			            "Entity": "dim_metrica.metrica"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_metrica"
+			            },
+			            "Object": {
+			              "Role": "dim_metrica.metrica"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_metricas_have_metricas"
+			        }
+			      ]
+			    },
+			    "tb_content_post_has_entity_01__indicadores_por_publicação_vl_metrica_linkedin": {
+			      "Binding": {
+			        "ConceptualEntity": "tb_content_posts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "tb_content_post": {
+			          "Target": {
+			            "Entity": "tb_content_post"
+			          }
+			        },
+			        "entity_01__indicadores_por_publicação.vl_metrica_linkedin": {
+			          "Target": {
+			            "Entity": "entity_01__indicadores_por_publicação.vl_metrica_linkedin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "tb_content_post"
+			            },
+			            "Object": {
+			              "Role": "entity_01__indicadores_por_publicação.vl_metrica_linkedin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "tb_content_posts_have_vl_metrica_linkedin"
+			        }
+			      ]
+			    },
+			    "dim_metrica_has_entity_01__indicadores_por_publicação_vl_metrica_linkedin": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_metrica"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_metrica": {
+			          "Target": {
+			            "Entity": "dim_metrica"
+			          }
+			        },
+			        "entity_01__indicadores_por_publicação.vl_metrica_linkedin": {
+			          "Target": {
+			            "Entity": "entity_01__indicadores_por_publicação.vl_metrica_linkedin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_metrica"
+			            },
+			            "Object": {
+			              "Role": "entity_01__indicadores_por_publicação.vl_metrica_linkedin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_metricas_have_vl_metrica_linkedin"
 			        }
 			      ]
 			    },

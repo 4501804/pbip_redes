@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "7a19cf0b03cdea90cdc9",
+  "position": {
+    "x": 630.31716671871379,
+    "y": 1.6541353383458626,
+    "z": 3000,
+    "height": 93.333333333333343,
+    "width": 290.92119275825348,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "01. indicadores por publicação"
+                    }
+                  },
+                  "Property": "(%) post_taxa_conversacao"
+                }
+              },
+              "queryRef": "01. indicadores por publicação.(%) post_taxa_conversacao",
+              "nativeQueryRef": "(%) Taxa de conversão",
+              "displayName": "(%) Taxa de conversão"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "01. indicadores por publicação"
+                  }
+                },
+                "Property": "(%) post_taxa_conversacao"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "9dc78b8a3492172d7e25"
+}

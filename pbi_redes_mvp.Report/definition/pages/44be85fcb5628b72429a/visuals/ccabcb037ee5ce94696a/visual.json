@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "ccabcb037ee5ce94696a",
+  "position": {
+    "x": 31.879699248120296,
+    "y": 170.48872180451127,
+    "z": 10000,
+    "height": 94.98746867167921,
+    "width": 1859.3107769423561,
+    "tabOrder": 7000
+  },
+  "visualGroup": {
+    "displayName": "geral_linkedin_cartoes",
+    "groupMode": "ScaleMode"
+  }
+}

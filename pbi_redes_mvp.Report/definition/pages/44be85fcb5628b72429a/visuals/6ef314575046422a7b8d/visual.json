@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
-  "name": "a0c85001060d208590a7",
+  "name": "6ef314575046422a7b8d",
   "position": {
     "x": 1255.714285714286,
     "y": 100,
@@ -13,5 +13,5 @@
     "displayName": "posts_linkedin_botao",
     "groupMode": "ScaleMode"
   },
-  "parentGroupName": "f2df711d603aeab440c3"
+  "parentGroupName": "44a8be8c5036e41132b3"
 }

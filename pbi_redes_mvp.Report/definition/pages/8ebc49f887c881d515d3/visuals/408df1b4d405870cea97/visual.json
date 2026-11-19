@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "00. indicadores gerais (conteúdo).total_cliques",
-              "nativeQueryRef": "total_cliques"
+              "nativeQueryRef": "Cliques",
+              "displayName": "Cliques"
             }
           ]
         }

@@ -1,0 +1,1283 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "instagram_geral",
+  "name": "5390bbea182c742c58a6",
+  "options": {
+    "targetVisualNames": [],
+    "preserveNewVisualVisibility": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "44be85fcb5628b72429a",
+    "sections": {
+      "44be85fcb5628b72429a": {
+        "visualContainers": {
+          "8f6fd11e03d39085206c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "388262f60d302e6cc476",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_calendario"
+                        }
+                      },
+                      "Property": "mes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "160650d323c106e2e00b",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_metrica"
+                        }
+                      },
+                      "Property": "metrica"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "24bae9bc7a53c95217a5",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "01. indicadores por publicação"
+                        }
+                      },
+                      "Property": "vl_metrica_linkedin"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "activeProjections": {
+                "Columns": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_calendario"
+                        }
+                      },
+                      "Property": "mes"
+                    }
+                  }
+                ],
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_metrica"
+                        }
+                      },
+                      "Property": "metrica"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "b158ae204be1066c6061": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "7f1dbb532e608a37b405",
+                  "type": "Advanced",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "d",
+                        "Entity": "dim_calendario",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "Comparison": {
+                                "ComparisonKind": 0,
+                                "Left": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "d"
+                                      }
+                                    },
+                                    "Property": "ano"
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "null"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_calendario"
+                        }
+                      },
+                      "Property": "ano"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "d",
+                                "Entity": "dim_calendario",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "d"
+                                            }
+                                          },
+                                          "Property": "ano"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "2026L"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_calendario"
+                        }
+                      },
+                      "Property": "ano"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "665504b6d1c29514d700": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "c1cce30055932d0e1100",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_calendario"
+                        }
+                      },
+                      "Property": "mes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "fe51c991bece60bd61ac",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "02. seguidores"
+                        }
+                      },
+                      "Property": "seguidores_novos"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_calendario"
+                        }
+                      },
+                      "Property": "mes"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "1f3a72cec9e6d0923de6": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "72288b1d36d016a445a9",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_calendario"
+                        }
+                      },
+                      "Property": "mes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "56e72e6bdcdb20126869",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "00. indicadores gerais (conteúdo)"
+                        }
+                      },
+                      "Property": "(%) total_taxa_engajamento"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_calendario"
+                        }
+                      },
+                      "Property": "mes"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "c96fcb27d88007e53553": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "5b34ab2bc57850c1dde7",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_calendario"
+                        }
+                      },
+                      "Property": "mes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "753ffd6e07365d978834",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "00. indicadores gerais (conteúdo)"
+                        }
+                      },
+                      "Property": "total_impressoes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_calendario"
+                        }
+                      },
+                      "Property": "mes"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_calendario"
+                        }
+                      },
+                      "Property": "mes"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "743b210a6c583560363e": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "ce5ee888c98d3c160d21": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "701c02e5793d9e03812c": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "2c6f99fc198d305e995a": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "42e078300acbe0140100": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "708d891c3cda3cce035d",
+                  "type": "TopN",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "subquery",
+                        "Expression": {
+                          "Subquery": {
+                            "Query": {
+                              "Version": 2,
+                              "From": [
+                                {
+                                  "Name": "t",
+                                  "Entity": "tb_content_posts",
+                                  "Type": 0
+                                },
+                                {
+                                  "Name": " ",
+                                  "Entity": "01. indicadores por publicação",
+                                  "Type": 0
+                                }
+                              ],
+                              "Select": [
+                                {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "t"
+                                      }
+                                    },
+                                    "Property": "post_title_resumo"
+                                  },
+                                  "Name": "field"
+                                }
+                              ],
+                              "OrderBy": [
+                                {
+                                  "Direction": 2,
+                                  "Expression": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": " "
+                                        }
+                                      },
+                                      "Property": "(%) post_taxa_engajamento"
+                                    }
+                                  }
+                                }
+                              ],
+                              "Top": 10
+                            }
+                          }
+                        },
+                        "Type": 2
+                      },
+                      {
+                        "Name": "t",
+                        "Entity": "tb_content_posts",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "t"
+                                    }
+                                  },
+                                  "Property": "post_title_resumo"
+                                }
+                              }
+                            ],
+                            "Table": {
+                              "SourceRef": {
+                                "Source": "subquery"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "tb_content_posts"
+                        }
+                      },
+                      "Property": "post_title_resumo"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "2853b6d57dcbcc30b2c8",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "01. indicadores por publicação"
+                        }
+                      },
+                      "Property": "ranking_total_impressoes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7871553a9e54c6204d3b",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "01. indicadores por publicação"
+                        }
+                      },
+                      "Property": "(%) post_taxa_engajamento"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "ec27dcfc8b7c36aea7ab",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "01. indicadores por publicação"
+                        }
+                      },
+                      "Property": "(%) post_taxa_reacao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "b1a572d1b15869ba1e7d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "01. indicadores por publicação"
+                        }
+                      },
+                      "Property": "(%) post_taxa_amplificacao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "71594e601d40ee0bd58b",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "01. indicadores por publicação"
+                        }
+                      },
+                      "Property": "(%) post_taxa_conversacao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "be8104a01ddd6057c7b2",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "01. indicadores por publicação"
+                        }
+                      },
+                      "Property": "(%) post_taxa_visualizacao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "01. indicadores por publicação"
+                        }
+                      },
+                      "Property": "ranking_total_impressoes"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "7ed78809e0e008b03691": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "3d0122c50a69be00aa92",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "00. indicadores gerais (conteúdo)"
+                        }
+                      },
+                      "Property": "total_cliques"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "00. indicadores gerais (conteúdo)"
+                        }
+                      },
+                      "Property": "total_cliques"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "dee04de0bb1173c60b4a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ac0edd480e2413692d20",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "00. indicadores gerais (conteúdo)"
+                        }
+                      },
+                      "Property": "total_comentarios"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "00. indicadores gerais (conteúdo)"
+                        }
+                      },
+                      "Property": "total_comentarios"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "fbbe91c3902da5ebc0a7": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "00d4ef20964dca60870b",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "00. indicadores gerais (conteúdo)"
+                        }
+                      },
+                      "Property": "total_impressoes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "00. indicadores gerais (conteúdo)"
+                        }
+                      },
+                      "Property": "total_impressoes"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "e893527221d0c6d40937": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "9e5f26c5c0a5ce01e257",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "00. indicadores gerais (conteúdo)"
+                        }
+                      },
+                      "Property": "total_reacoes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "00. indicadores gerais (conteúdo)"
+                        }
+                      },
+                      "Property": "total_reacoes"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "fe93b0e674d0423a8105": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a14dce0193748037d04a",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "00. indicadores gerais (conteúdo)"
+                        }
+                      },
+                      "Property": "(%) total_taxa_engajamento"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "00. indicadores gerais (conteúdo)"
+                        }
+                      },
+                      "Property": "(%) total_taxa_engajamento"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "8dadfbb830c82cb38837": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "634856eabeb729620808",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "00. indicadores gerais (conteúdo)"
+                        }
+                      },
+                      "Property": "total_repostagens"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "00. indicadores gerais (conteúdo)"
+                        }
+                      },
+                      "Property": "total_repostagens"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "d16e768a13498b8a9187": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "2834df090009d9bb166e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "01. indicadores por publicação"
+                        }
+                      },
+                      "Property": "(%) post_taxa_visualizacao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "01. indicadores por publicação"
+                        }
+                      },
+                      "Property": "(%) post_taxa_visualizacao"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "33d7bd9015837aa507c0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d093cdecbcbe475ca6d7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "01. indicadores por publicação"
+                        }
+                      },
+                      "Property": "(%) post_taxa_reacao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "01. indicadores por publicação"
+                        }
+                      },
+                      "Property": "(%) post_taxa_reacao"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "7a19cf0b03cdea90cdc9": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "9d05aba06a6d0e98b000",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "01. indicadores por publicação"
+                        }
+                      },
+                      "Property": "(%) post_taxa_conversacao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "01. indicadores por publicação"
+                        }
+                      },
+                      "Property": "(%) post_taxa_conversacao"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "e0b140e59083c41e63eb": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ffc8e70c7ecd08ea0e9c",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "01. indicadores por publicação"
+                        }
+                      },
+                      "Property": "(%) post_taxa_amplificacao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "01. indicadores por publicação"
+                        }
+                      },
+                      "Property": "(%) post_taxa_amplificacao"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "a0aaf90630b91d43daa4": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b183020b3daa308a3754",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "01. indicadores por publicação"
+                        }
+                      },
+                      "Property": "(%) post_taxa_engajamento"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "01. indicadores por publicação"
+                        }
+                      },
+                      "Property": "(%) post_taxa_engajamento"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "ab544b0e96120003e2d3": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b4c78fd49188225bad7c",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_calendario"
+                        }
+                      },
+                      "Property": "mes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "4c7c5fe14a6068109479",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "00. indicadores gerais (conteúdo)"
+                        }
+                      },
+                      "Property": "total_cliques"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "19044170b4307cbe30a2",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "00. indicadores gerais (conteúdo)"
+                        }
+                      },
+                      "Property": "total_comentarios"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "76e5940acc5e716e3ee4",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "00. indicadores gerais (conteúdo)"
+                        }
+                      },
+                      "Property": "total_reacoes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d1bf279c9aab89081e55",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "00. indicadores gerais (conteúdo)"
+                        }
+                      },
+                      "Property": "total_repostagens"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredColumnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_calendario"
+                        }
+                      },
+                      "Property": "mes"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_calendario"
+                        }
+                      },
+                      "Property": "mes"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "ee25e698d12363e8a182": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "0d55c60608bb4d9909ce": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "c5ca06cb2dd97053566c": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "c0e6f6d534e918205ade": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "4216a561968457d744d0": {
+            "isHidden": false
+          },
+          "0b77e10984a64ded3216": {
+            "isHidden": false
+          },
+          "881773e52e23405b1a83": {
+            "isHidden": false,
+            "children": {
+              "894a65e109ae05990cbc": {
+                "isHidden": false
+              }
+            }
+          },
+          "ccabcb037ee5ce94696a": {
+            "isHidden": false
+          },
+          "9dc78b8a3492172d7e25": {
+            "isHidden": false
+          },
+          "44a8be8c5036e41132b3": {
+            "isHidden": false,
+            "children": {
+              "6ef314575046422a7b8d": {
+                "isHidden": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
