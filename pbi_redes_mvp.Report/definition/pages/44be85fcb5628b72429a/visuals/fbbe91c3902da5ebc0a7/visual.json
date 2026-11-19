@@ -20,10 +20,10 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "00. indicadores gerais (conteúdo)"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "total_impressoes"
+                  "Property": "linkedin_total_impressoes"
                 }
               },
               "queryRef": "00. indicadores gerais (conteúdo).total_impressoes",
@@ -40,10 +40,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "00. indicadores gerais (conteúdo)"
+                    "Entity": "Medidas"
                   }
                 },
-                "Property": "total_impressoes"
+                "Property": "linkedin_total_impressoes"
               }
             },
             "direction": "Descending"

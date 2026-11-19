@@ -5659,149 +5659,11 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "entity_00__indicadores_gerais_conteúdo": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "00. indicadores gerais (conteúdo)"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "00. indicadores gerais (conteúdo)": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "00. indicadore gerais (conteúdo)": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.78
-			          }
-			        }
-			      ]
-			    },
-			    "entity_00__indicadores_gerais_conteúdo.value": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "00. indicadores gerais (conteúdo)",
-			          "ConceptualProperty": "Value"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "value": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "assessment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "worth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "price": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "cost": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "charge": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "importance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "significance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "usefulness": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "consequence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "use": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.452
-			          }
-			        }
-			      ]
-			    },
 			    "entity_00__indicadores_gerais_conteúdo.total_cliques": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "00. indicadores gerais (conteúdo)",
-			          "ConceptualProperty": "total_cliques"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_total_cliques"
 			        }
 			      },
 			      "State": "Generated",
@@ -5849,8 +5711,8 @@ cultureInfo en-US
 			    "entity_00__indicadores_gerais_conteúdo.total_impressoes": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "00. indicadores gerais (conteúdo)",
-			          "ConceptualProperty": "total_impressoes"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_total_impressoes"
 			        }
 			      },
 			      "State": "Generated",
@@ -5902,8 +5764,8 @@ cultureInfo en-US
 			    "entity_00__indicadores_gerais_conteúdo.total_reacoes": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "00. indicadores gerais (conteúdo)",
-			          "ConceptualProperty": "total_reacoes"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_total_reacoes"
 			        }
 			      },
 			      "State": "Generated",
@@ -5955,8 +5817,8 @@ cultureInfo en-US
 			    "entity_00__indicadores_gerais_conteúdo.total_comentarios": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "00. indicadores gerais (conteúdo)",
-			          "ConceptualProperty": "total_comentarios"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_total_comentarios"
 			        }
 			      },
 			      "State": "Generated",
@@ -6008,8 +5870,8 @@ cultureInfo en-US
 			    "entity_00__indicadores_gerais_conteúdo.total_repostagens": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "00. indicadores gerais (conteúdo)",
-			          "ConceptualProperty": "total_repostagens"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_total_repostagens"
 			        }
 			      },
 			      "State": "Generated",
@@ -6061,8 +5923,8 @@ cultureInfo en-US
 			    "entity_00__indicadores_gerais_conteúdo.total_taxa_engajamento": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "00. indicadores gerais (conteúdo)",
-			          "ConceptualProperty": "(%) total_taxa_engajamento"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_total_taxa_engajamento_percent"
 			        }
 			      },
 			      "State": "Generated",
@@ -6084,149 +5946,11 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "entity_01__indicadores_por_publicação": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "01. indicadores por publicação": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "01. indicadore por publicação": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.78
-			          }
-			        }
-			      ]
-			    },
-			    "entity_01__indicadores_por_publicação.value": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "Value"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "value": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "assessment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "worth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "price": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "cost": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "charge": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "importance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "significance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "usefulness": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "consequence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "use": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.452
-			          }
-			        }
-			      ]
-			    },
 			    "entity_01__indicadores_por_publicação.post_total_impressoes": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "post_total_impressoes"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_post_total_impressoes"
 			        }
 			      },
 			      "State": "Generated",
@@ -6268,8 +5992,8 @@ cultureInfo en-US
 			    "entity_01__indicadores_por_publicação.post_quantidade": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "post_quantidade"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_post_quantidade"
 			        }
 			      },
 			      "State": "Generated",
@@ -6291,8 +6015,8 @@ cultureInfo en-US
 			    "entity_01__indicadores_por_publicação.post_total_visualizacoes": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "post_total_visualizacoes"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_post_total_visualizacoes"
 			        }
 			      },
 			      "State": "Generated",
@@ -6334,8 +6058,8 @@ cultureInfo en-US
 			    "entity_01__indicadores_por_publicação.post_cliques": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "post_cliques"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_post_cliques"
 			        }
 			      },
 			      "State": "Generated",
@@ -6363,8 +6087,8 @@ cultureInfo en-US
 			    "entity_01__indicadores_por_publicação.post_curtidas": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "post_curtidas"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_post_curtidas"
 			        }
 			      },
 			      "State": "Generated",
@@ -6386,8 +6110,8 @@ cultureInfo en-US
 			    "entity_01__indicadores_por_publicação.post_comentarios": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "post_comentarios"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_post_comentarios"
 			        }
 			      },
 			      "State": "Generated",
@@ -6409,8 +6133,8 @@ cultureInfo en-US
 			    "entity_01__indicadores_por_publicação.post_repostagens": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "post_repostagens"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_post_repostagens"
 			        }
 			      },
 			      "State": "Generated",
@@ -6432,8 +6156,8 @@ cultureInfo en-US
 			    "entity_01__indicadores_por_publicação.post_seguidores_gerados": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "post_seguidores_gerados"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_post_seguidores_gerados"
 			        }
 			      },
 			      "State": "Generated",
@@ -6455,8 +6179,8 @@ cultureInfo en-US
 			    "entity_01__indicadores_por_publicação.post_taxa_engajamento": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "(%) post_taxa_engajamento"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_post_taxa_engajamento"
 			        }
 			      },
 			      "State": "Generated",
@@ -6481,8 +6205,8 @@ cultureInfo en-US
 			    "entity_01__indicadores_por_publicação.post_engajamento_absoluto": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "post_engajamento_absoluto"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_post_engajamento_absoluto"
 			        }
 			      },
 			      "State": "Generated",
@@ -6504,8 +6228,8 @@ cultureInfo en-US
 			    "entity_01__indicadores_por_publicação.post_taxa_visualizacao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "(%) post_taxa_visualizacao"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_post_taxa_visualizacao"
 			        }
 			      },
 			      "State": "Generated",
@@ -6530,8 +6254,8 @@ cultureInfo en-US
 			    "entity_01__indicadores_por_publicação.post_taxa_reacao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "(%) post_taxa_reacao"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_post_taxa_reacao"
 			        }
 			      },
 			      "State": "Generated",
@@ -6566,8 +6290,8 @@ cultureInfo en-US
 			    "entity_01__indicadores_por_publicação.post_taxa_conversacao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "(%) post_taxa_conversacao"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_post_taxa_conversacao"
 			        }
 			      },
 			      "State": "Generated",
@@ -6592,8 +6316,8 @@ cultureInfo en-US
 			    "entity_01__indicadores_por_publicação.post_taxa_amplificacao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "(%) post_taxa_amplificacao"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_post_taxa_amplificacao"
 			        }
 			      },
 			      "State": "Generated",
@@ -6618,8 +6342,8 @@ cultureInfo en-US
 			    "entity_01__indicadores_por_publicação.post_seguidores_gerados_100_0fl": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "post_seguidores_gerados_1000fl"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_post_seguidores_gerados_1000fl"
 			        }
 			      },
 			      "State": "Generated",
@@ -6638,142 +6362,11 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "entity_02__seguidore": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "02. seguidores"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "02. seguidore": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "entity_02__seguidore.value": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "02. seguidores",
-			          "ConceptualProperty": "Value"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "value": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "assessment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "worth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "price": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "cost": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "charge": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "importance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "significance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "usefulness": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "consequence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "use": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.452
-			          }
-			        }
-			      ]
-			    },
 			    "entity_02__seguidore.seguidores_novos": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "02. seguidores",
-			          "ConceptualProperty": "seguidores_novos"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_seguidores_novos"
 			        }
 			      },
 			      "State": "Generated",
@@ -6802,142 +6395,11 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "entity_03__visita": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "03. visitas"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "03. visita": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "entity_03__visita.value": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "03. visitas",
-			          "ConceptualProperty": "Value"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "value": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "assessment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "worth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "price": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "cost": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "charge": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "importance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "significance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "usefulness": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "consequence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "use": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.452
-			          }
-			        }
-			      ]
-			    },
 			    "entity_03__visita.visitas_total_visualizacoes_pagina": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "03. visitas",
-			          "ConceptualProperty": "visitas_total_visualizacoes_pagina"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_visitas_total_visualizacoes_pagina"
 			        }
 			      },
 			      "State": "Generated",
@@ -6979,8 +6441,8 @@ cultureInfo en-US
 			    "entity_03__visita.total_visitantes_unicos": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "03. visitas",
-			          "ConceptualProperty": "total_visitantes_unicos"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_total_visitantes_unicos"
 			        }
 			      },
 			      "State": "Generated",
@@ -7022,8 +6484,8 @@ cultureInfo en-US
 			    "entity_01__indicadores_por_publicação.ranking_total_impressoes": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "ranking_total_impressoes"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_ranking_total_impressoes"
 			        }
 			      },
 			      "State": "Generated",
@@ -7075,8 +6537,8 @@ cultureInfo en-US
 			    "entity_01__indicadores_por_publicação.ranking_total_impressoes_exibicao": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "ranking_total_impressoes_exibicao"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_ranking_total_impressoes_exibicao"
 			        }
 			      },
 			      "State": "Generated",
@@ -7718,8 +7180,8 @@ cultureInfo en-US
 			    "entity_01__indicadores_por_publicação.vl_metrica_linkedin": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "01. indicadores por publicação",
-			          "ConceptualProperty": "vl_metrica_linkedin"
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "linkedin_metrica"
 			        }
 			      },
 			      "State": "Generated",
@@ -9206,72 +8668,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "entity_01__indicadores_por_publicação_has_ranking_total_impressoes_exibicao": {
-			      "Binding": {
-			        "ConceptualEntity": "01. indicadores por publicação"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity_01__indicadores_por_publicação": {
-			          "Target": {
-			            "Entity": "entity_01__indicadores_por_publicação"
-			          }
-			        },
-			        "entity_01__indicadores_por_publicação.ranking_total_impressoes_exibicao": {
-			          "Target": {
-			            "Entity": "entity_01__indicadores_por_publicação.ranking_total_impressoes_exibicao"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity_01__indicadores_por_publicação"
-			            },
-			            "Object": {
-			              "Role": "entity_01__indicadores_por_publicação.ranking_total_impressoes_exibicao"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing01__indicadores_por_publicaçãos_have_ranking_total_impressoes_exibicao"
-			        }
-			      ]
-			    },
-			    "entity_01__indicadores_por_publicação_has_ranking_total_impressoes": {
-			      "Binding": {
-			        "ConceptualEntity": "01. indicadores por publicação"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity_01__indicadores_por_publicação": {
-			          "Target": {
-			            "Entity": "entity_01__indicadores_por_publicação"
-			          }
-			        },
-			        "entity_01__indicadores_por_publicação.ranking_total_impressoes": {
-			          "Target": {
-			            "Entity": "entity_01__indicadores_por_publicação.ranking_total_impressoes"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity_01__indicadores_por_publicação"
-			            },
-			            "Object": {
-			              "Role": "entity_01__indicadores_por_publicação.ranking_total_impressoes"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing01__indicadores_por_publicaçãos_have_ranking_total_impressoes"
-			        }
-			      ]
-			    },
 			    "tb_visitors_metrics_has_entity_03__visita_total_visitantes_unicos": {
 			      "Binding": {
 			        "ConceptualEntity": "tb_visitors_metrics"
@@ -9338,39 +8734,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "entity_03__visita_has_value": {
-			      "Binding": {
-			        "ConceptualEntity": "03. visitas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity_03__visita": {
-			          "Target": {
-			            "Entity": "entity_03__visita"
-			          }
-			        },
-			        "entity_03__visita.value": {
-			          "Target": {
-			            "Entity": "entity_03__visita.value"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity_03__visita"
-			            },
-			            "Object": {
-			              "Role": "entity_03__visita.value"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing03__visitas_have_values"
-			        }
-			      ]
-			    },
 			    "tb_follower_new_has_entity_02__seguidore_seguidores_novos": {
 			      "Binding": {
 			        "ConceptualEntity": "tb_followers_new"
@@ -9401,39 +8764,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "tb_follower_new_have_seguidores_novos"
-			        }
-			      ]
-			    },
-			    "entity_02__seguidore_has_value": {
-			      "Binding": {
-			        "ConceptualEntity": "02. seguidores"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity_02__seguidore": {
-			          "Target": {
-			            "Entity": "entity_02__seguidore"
-			          }
-			        },
-			        "entity_02__seguidore.value": {
-			          "Target": {
-			            "Entity": "entity_02__seguidore.value"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity_02__seguidore"
-			            },
-			            "Object": {
-			              "Role": "entity_02__seguidore.value"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing02__seguidores_have_values"
 			        }
 			      ]
 			    },
@@ -9965,39 +9295,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "entity_01__indicadores_por_publicação_has_value": {
-			      "Binding": {
-			        "ConceptualEntity": "01. indicadores por publicação"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity_01__indicadores_por_publicação": {
-			          "Target": {
-			            "Entity": "entity_01__indicadores_por_publicação"
-			          }
-			        },
-			        "entity_01__indicadores_por_publicação.value": {
-			          "Target": {
-			            "Entity": "entity_01__indicadores_por_publicação.value"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity_01__indicadores_por_publicação"
-			            },
-			            "Object": {
-			              "Role": "entity_01__indicadores_por_publicação.value"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing01__indicadores_por_publicaçãos_have_values"
-			        }
-			      ]
-			    },
 			    "tb_content_metrics_has_entity_00__indicadores_gerais_conteúdo_total_taxa_engajamento": {
 			      "Binding": {
 			        "ConceptualEntity": "tb_content_metrics"
@@ -10193,39 +9490,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "tb_content_metrics_have_total_cliques"
-			        }
-			      ]
-			    },
-			    "entity_00__indicadores_gerais_conteúdo_has_value": {
-			      "Binding": {
-			        "ConceptualEntity": "00. indicadores gerais (conteúdo)"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity_00__indicadores_gerais_conteúdo": {
-			          "Target": {
-			            "Entity": "entity_00__indicadores_gerais_conteúdo"
-			          }
-			        },
-			        "entity_00__indicadores_gerais_conteúdo.value": {
-			          "Target": {
-			            "Entity": "entity_00__indicadores_gerais_conteúdo.value"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity_00__indicadores_gerais_conteúdo"
-			            },
-			            "Object": {
-			              "Role": "entity_00__indicadores_gerais_conteúdo.value"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing00__indicadores_gerais_conteúdo_have_values"
 			        }
 			      ]
 			    },

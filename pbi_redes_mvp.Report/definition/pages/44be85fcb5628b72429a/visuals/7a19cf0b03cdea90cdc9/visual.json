@@ -20,10 +20,10 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "01. indicadores por publicação"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "(%) post_taxa_conversacao"
+                  "Property": "linkedin_post_taxa_conversacao"
                 }
               },
               "queryRef": "01. indicadores por publicação.(%) post_taxa_conversacao",
@@ -40,10 +40,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "01. indicadores por publicação"
+                    "Entity": "Medidas"
                   }
                 },
-                "Property": "(%) post_taxa_conversacao"
+                "Property": "linkedin_post_taxa_conversacao"
               }
             },
             "direction": "Descending"

@@ -39,10 +39,10 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "00. indicadores gerais (conteúdo)"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "(%) total_taxa_engajamento"
+                  "Property": "linkedin_total_taxa_engajamento_percent"
                 }
               },
               "queryRef": "00. indicadores gerais (conteúdo).(%) total_taxa_engajamento",

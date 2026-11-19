@@ -1,0 +1,155 @@
+table Medidas
+	lineageTag: 40e476e1-4c3c-468e-b3d4-539e5f9f834c
+
+	measure linkedin_total_cliques = calculate(sum(tb_content_metrics[Clicks (total)]))
+		formatString: 0
+		lineageTag: 8a232eca-5bfd-43bf-8f1c-93550b59ba3e
+
+	measure linkedin_total_comentarios = calculate(sum(tb_content_metrics[Comments (total)]))
+		formatString: 0
+		lineageTag: 7e1ca214-c17d-4703-a9d7-493ae0e5aa74
+
+	measure linkedin_total_repostagens = calculate(sum(tb_content_metrics[Reposts (total)]))
+		formatString: 0
+		lineageTag: 7b29053a-c4a5-4aff-87ed-11a983fe45b6
+
+	measure linkedin_total_taxa_engajamento_percent = ([linkedin_total_cliques]+[linkedin_total_comentarios]+[linkedin_total_repostagens]+[linkedin_total_reacoes])/[linkedin_total_impressoes]
+		lineageTag: d1890ecd-3976-48c7-92f2-af4006354b99
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure linkedin_total_reacoes = calculate(sum(tb_content_metrics[Reactions (total)]))
+		formatString: 0
+		lineageTag: 61c13750-954d-4e34-b316-c68552fcde31
+
+	measure linkedin_total_impressoes = calculate(sum(tb_content_metrics[Impressions (total)]))
+		formatString: 0
+		lineageTag: e1472325-67f7-4645-badb-55fa5be274ff
+
+	measure linkedin_post_taxa_amplificacao = [linkedin_post_repostagens]/[linkedin_post_total_impressoes]
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 20e28ed5-801c-411f-8723-ace7898d50b0
+
+	measure linkedin_post_taxa_conversacao = [linkedin_post_comentarios]/[linkedin_post_total_impressoes]
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 1b522d19-c762-4acd-bbad-40ecbb63e5fe
+
+	measure linkedin_post_taxa_engajamento = ([linkedin_post_cliques]+[linkedin_post_comentarios]+[linkedin_post_repostagens])/[linkedin_post_total_impressoes]
+		formatString: 0%;-0%;0%
+		lineageTag: c04449c6-069a-4ce4-9110-a0b97177f198
+
+	measure linkedin_post_taxa_reacao = [linkedin_post_curtidas]/[linkedin_post_total_impressoes]
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 55889e6c-7f12-4575-bab5-c2ff2e2713af
+
+	measure linkedin_post_taxa_visualizacao = [linkedin_post_total_visualizacoes]/[linkedin_post_total_impressoes]
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 7ec54ccb-198b-48ba-9f40-9649084ed837
+
+	measure linkedin_post_cliques = Calculate(sum(tb_content_posts[Clicks]))
+		formatString: 0
+		lineageTag: 3595f249-0b29-4919-b8dc-d24f32ac7230
+
+	measure linkedin_post_comentarios = calculate(sum(tb_content_posts[Comments]))
+		formatString: 0
+		lineageTag: 8631329c-b714-4b2f-a8b7-55d419d5cd9d
+
+	measure linkedin_post_curtidas = calculate(sum(tb_content_posts[Likes]))
+		formatString: 0
+		lineageTag: 0c5a750e-73a6-450c-a49d-833b7303fb68
+
+	measure linkedin_post_engajamento_absoluto = [linkedin_post_cliques]+[linkedin_post_curtidas]+[linkedin_post_comentarios]+[linkedin_post_repostagens]+[linkedin_post_seguidores_gerados]
+		formatString: 0
+		lineageTag: 7db3799d-2d5f-4b74-949c-4a9c16773ba6
+
+	measure linkedin_post_quantidade = Calculate(countrows(tb_content_posts))
+		formatString: 0
+		lineageTag: 1ef3b834-76b6-4ecb-9976-d4f36887bd17
+
+	measure linkedin_post_repostagens = calculate(sum(tb_content_posts[Reposts]))
+		formatString: 0
+		lineageTag: bb236a28-fd60-4951-b933-e95ec7190215
+
+	measure linkedin_post_seguidores_gerados = CALCULATE(sum(tb_content_posts[Follows]))
+		formatString: 0
+		lineageTag: ab6ccb10-716e-4055-9c2c-7dac3d0c15fa
+
+	measure linkedin_post_seguidores_gerados_1000fl = ([linkedin_post_seguidores_gerados]/[linkedin_total_impressoes])*1000
+		lineageTag: eb171148-1664-4daf-9eaa-172a849707d8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure linkedin_post_total_impressoes = calculate(sum(tb_content_posts[Impressions]))
+		formatString: 0
+		lineageTag: c3c664db-c822-47dc-a034-f482868132d4
+
+	measure linkedin_post_total_visualizacoes = calculate(sum(tb_content_posts[Views]))
+		formatString: 0
+		lineageTag: 84c337dc-4707-4cac-bf1c-f59db72ec62d
+
+	measure linkedin_ranking_total_impressoes = ```
+			
+			RANKX(
+			    ALLSELECTED(tb_content_posts[post_title_resumo]),
+			    [linkedin_post_taxa_engajamento],
+			    ,
+			    DESC,
+			    DENSE
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 84504e0e-c962-483c-aa85-967c3d6ce851
+
+	measure linkedin_ranking_total_impressoes_exibicao =
+			
+			FORMAT([linkedin_ranking_total_impressoes], "0") & "º"
+		lineageTag: e0f33426-1343-432e-be6d-302eeeccd694
+
+	measure linkedin_metrica =
+			
+			SWITCH(
+			    SELECTEDVALUE(dim_metrica[metrica]),
+			    "Engajamento", [linkedin_post_taxa_engajamento],
+			    "Reação", [linkedin_post_taxa_reacao],
+			    "Amplificação", [linkedin_post_taxa_amplificacao],
+			    "Conversão", [linkedin_post_taxa_conversacao],
+			    "Visualização", [linkedin_post_taxa_visualizacao]
+			)
+		lineageTag: 24f337de-3760-4994-94ff-d7cd9766ffc9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure linkedin_seguidores_novos = CALCULATE(sum(tb_followers_new[Total followers]))
+		formatString: 0
+		lineageTag: ba21a3ec-ffde-4a92-adf4-a5c0627af4ab
+
+	measure linkedin_total_visitantes_unicos = calculate(sum(tb_visitors_metrics[Total unique visitors (total)]))
+		formatString: 0
+		lineageTag: 89b7f70d-953a-42e4-bd80-85b39ccb347c
+
+	measure linkedin_visitas_total_visualizacoes_pagina = calculate(sum(tb_visitors_metrics[Total page views (total)]))
+		formatString: 0
+		lineageTag: 89393fc8-6d27-4b67-8df4-386e3f5ff3dc
+
+	column 'Coluna 1'
+		dataType: string
+		isHidden
+		lineageTag: a5a31522-7f32-47ba-88a7-c851306c54cc
+		summarizeBy: none
+		sourceColumn: Coluna 1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Medidas = m
+		mode: import
+		source =
+				let
+				  Origem = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Coluna 1" = _t])
+				in
+				  Origem
+
+	annotation PBI_ResultType = Table
+

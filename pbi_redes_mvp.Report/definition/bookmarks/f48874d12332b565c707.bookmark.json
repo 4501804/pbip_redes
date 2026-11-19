@@ -4,11 +4,7 @@
   "name": "f48874d12332b565c707",
   "options": {
     "targetVisualNames": [
-      "f2df711d603aeab440c3",
-      "a0c85001060d208590a7",
-      "e0ad355fdc639218ed2c",
-      "ea89a72d9343e127bca0",
-      "dbc181dcdece7ec92885"
+      "e0ad355fdc639218ed2c"
     ],
     "suppressData": true,
     "preserveNewVisualVisibility": true
@@ -19,12 +15,131 @@
     "sections": {
       "8ebc49f887c881d515d3": {
         "visualContainers": {
+          "e4a1d5efd042a5b44bc9": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e7a61eb5e4b50d7695bb",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_calendario"
+                        }
+                      },
+                      "Property": "mes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "0c44315d70d4210beb57",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_metrica"
+                        }
+                      },
+                      "Property": "metrica"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "97d7379e7d0500c01b48",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "linkedin_metrica"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "activeProjections": {
+                "Columns": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_calendario"
+                        }
+                      },
+                      "Property": "mes"
+                    }
+                  }
+                ],
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_metrica"
+                        }
+                      },
+                      "Property": "metrica"
+                    }
+                  }
+                ]
+              }
+            }
+          },
           "4222c95341a8807e0272": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "b26e045ba362b0d40338",
+                  "name": "7f1dbb532e608a37b405",
                   "type": "Advanced",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "d",
+                        "Entity": "dim_calendario",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "Comparison": {
+                                "ComparisonKind": 0,
+                                "Left": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "d"
+                                      }
+                                    },
+                                    "Property": "ano"
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "null"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
                   "expression": {
                     "Column": {
                       "Expression": {
@@ -43,6 +158,53 @@
               "visualType": "slicer",
               "objects": {
                 "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "d",
+                                "Entity": "dim_calendario",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "d"
+                                            }
+                                          },
+                                          "Property": "ano"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "2026L"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
                   "data": [
                     {
                       "properties": {
@@ -74,62 +236,11 @@
               }
             }
           },
-          "4fee63f61010b8e0ae08": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "bcb2f37f8d654068868d": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "f8fe6b130a2a2b885d58": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "75a9ff96b750030e9648": {
-            "singleVisual": {
-              "visualType": "image",
-              "objects": {}
-            }
-          },
-          "e4775129b78880d110ed": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "e0ad355fdc639218ed2c": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "ea89a72d9343e127bca0": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "dbc181dcdece7ec92885": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "4cdd7d13a8d7b792ec9d": {
+          "46605cc1a1057b9562d3": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "ce4c85c9c45d0557be2c",
+                  "name": "3efe84fa3dae2017d627",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -144,16 +255,16 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "daca89d1ce1b5d20697b",
+                  "name": "866ce2704d2ece843041",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "(%) total_taxa_engajamento"
+                      "Property": "linkedin_seguidores_novos"
                     }
                   },
                   "howCreated": 0
@@ -179,11 +290,11 @@
               }
             }
           },
-          "46605cc1a1057b9562d3": {
+          "4cdd7d13a8d7b792ec9d": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "a2d9456eca00012e1008",
+                  "name": "e0be6235056740399001",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -198,16 +309,16 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "cbaeb9b0abeabd105635",
+                  "name": "b7b9f5d92d905e03e9dc",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "02. seguidores"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "seguidores_novos"
+                      "Property": "linkedin_total_taxa_engajamento_percent"
                     }
                   },
                   "howCreated": 0
@@ -237,7 +348,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "b5e9a0ab43702d6a6078",
+                  "name": "859a40083a3302d5a0d8",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -252,16 +363,16 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "5c4fbaf4100e3c6bc160",
+                  "name": "3b7d89581b647024003b",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_impressoes"
+                      "Property": "linkedin_total_impressoes"
                     }
                   },
                   "howCreated": 0
@@ -302,244 +413,31 @@
               }
             }
           },
-          "6cde06c372708a807145": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "5b7aa5c744601454d017",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
-                        }
-                      },
-                      "Property": "total_reacoes"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
+          "4fee63f61010b8e0ae08": {
             "singleVisual": {
-              "visualType": "cardVisual",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
-                        }
-                      },
-                      "Property": "total_reacoes"
-                    }
-                  }
-                }
-              ]
+              "visualType": "actionButton",
+              "objects": {}
             }
           },
-          "e0a1b1f9e821a596b40c": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "d8575df243a830ad9429",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
-                        }
-                      },
-                      "Property": "(%) total_taxa_engajamento"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
+          "bcb2f37f8d654068868d": {
             "singleVisual": {
-              "visualType": "cardVisual",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
-                        }
-                      },
-                      "Property": "(%) total_taxa_engajamento"
-                    }
-                  }
-                }
-              ]
+              "visualType": "actionButton",
+              "objects": {}
             }
           },
-          "c57be98ba39ae73a8631": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "4fe547bd0d5c1e1bebb9",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "02. seguidores"
-                        }
-                      },
-                      "Property": "seguidores_novos"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
+          "f8fe6b130a2a2b885d58": {
             "singleVisual": {
-              "visualType": "cardVisual",
+              "visualType": "textbox",
               "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "02. seguidores"
-                        }
-                      },
-                      "Property": "seguidores_novos"
-                    }
-                  }
-                }
-              ]
+              "display": {
+                "mode": "hidden"
+              }
             }
           },
-          "408df1b4d405870cea97": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "a31a7692a068d0084533",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
-                        }
-                      },
-                      "Property": "total_cliques"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
+          "75a9ff96b750030e9648": {
             "singleVisual": {
-              "visualType": "cardVisual",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
-                        }
-                      },
-                      "Property": "total_cliques"
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          "6d9d66eba29503db91ac": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "f16aa010ad5392d80000",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
-                        }
-                      },
-                      "Property": "total_comentarios"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "cardVisual",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
-                        }
-                      },
-                      "Property": "total_comentarios"
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          "cedf30c1a3531221ebea": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "edbb67b2368d01806606",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
-                        }
-                      },
-                      "Property": "total_impressoes"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "cardVisual",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
-                        }
-                      },
-                      "Property": "total_impressoes"
-                    }
-                  }
-                }
-              ]
+              "visualType": "image",
+              "objects": {}
             }
           },
           "91a8cfb914a741e670ba": {
@@ -564,8 +462,8 @@
                                   "Type": 0
                                 },
                                 {
-                                  "Name": " ",
-                                  "Entity": "01. indicadores por publicação",
+                                  "Name": "m",
+                                  "Entity": "Medidas",
                                   "Type": 0
                                 }
                               ],
@@ -589,10 +487,10 @@
                                     "Measure": {
                                       "Expression": {
                                         "SourceRef": {
-                                          "Source": " "
+                                          "Source": "m"
                                         }
                                       },
-                                      "Property": "(%) post_taxa_engajamento"
+                                      "Property": "linkedin_post_taxa_engajamento"
                                     }
                                   }
                                 }
@@ -648,91 +546,91 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "56a14cffd26360d502e7",
+                  "name": "b2cbad593e5d8e311bae",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "01. indicadores por publicação"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "ranking_total_impressoes"
+                      "Property": "linkedin_ranking_total_impressoes"
                     }
                   },
                   "howCreated": 0
                 },
                 {
-                  "name": "9580c6d00148d47ead73",
+                  "name": "627e8fb27b051be9cb65",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "01. indicadores por publicação"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "(%) post_taxa_engajamento"
+                      "Property": "linkedin_post_taxa_engajamento"
                     }
                   },
                   "howCreated": 0
                 },
                 {
-                  "name": "c484a150487d4074d0dc",
+                  "name": "c0c30ceea2e201ba7872",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "01. indicadores por publicação"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "(%) post_taxa_reacao"
+                      "Property": "linkedin_post_taxa_reacao"
                     }
                   },
                   "howCreated": 0
                 },
                 {
-                  "name": "66586966d5dd918667bc",
+                  "name": "6ed1bb01d96c326d2967",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "01. indicadores por publicação"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "(%) post_taxa_amplificacao"
+                      "Property": "linkedin_post_taxa_amplificacao"
                     }
                   },
                   "howCreated": 0
                 },
                 {
-                  "name": "902348b1dec035732e68",
+                  "name": "3e92e0808ac9942ab65c",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "01. indicadores por publicação"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "(%) post_taxa_conversacao"
+                      "Property": "linkedin_post_taxa_conversacao"
                     }
                   },
                   "howCreated": 0
                 },
                 {
-                  "name": "5eb44464c9a9c097b5a1",
+                  "name": "31712dd0ec50e1d0bce3",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "01. indicadores por publicação"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "(%) post_taxa_visualizacao"
+                      "Property": "linkedin_post_taxa_visualizacao"
                     }
                   },
                   "howCreated": 0
@@ -749,30 +647,30 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "01. indicadores por publicação"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "ranking_total_impressoes"
+                      "Property": "linkedin_ranking_total_impressoes"
                     }
                   }
                 }
               ]
             }
           },
-          "3ffd32ca09c6bd9107ca": {
+          "408df1b4d405870cea97": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "a55ff5a43de9dd422687",
+                  "name": "cbf3acf0c5349d058080",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_reacoes"
+                      "Property": "linkedin_total_cliques"
                     }
                   },
                   "howCreated": 0
@@ -789,10 +687,210 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_reacoes"
+                      "Property": "linkedin_total_cliques"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "6cde06c372708a807145": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "6ae4d48839469085646c",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "linkedin_total_comentarios"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "linkedin_total_comentarios"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "6d9d66eba29503db91ac": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "be6841f2d7e4ca918c4c",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "linkedin_total_impressoes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "linkedin_total_impressoes"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "c57be98ba39ae73a8631": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "3f2dbc00a00baea03d51",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "linkedin_total_reacoes"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "linkedin_total_reacoes"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "cedf30c1a3531221ebea": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "72148a8987ae40021a66",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "linkedin_total_taxa_engajamento_percent"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "linkedin_total_taxa_engajamento_percent"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "e0a1b1f9e821a596b40c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b6a2660b800b87c171c2",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "linkedin_total_repostagens"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "linkedin_total_repostagens"
                     }
                   }
                 }
@@ -803,16 +901,16 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "d5d59e0ede7006306176",
+                  "name": "c4ff6da2ab3340ddd5d8",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "02. seguidores"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "seguidores_novos"
+                      "Property": "linkedin_post_taxa_visualizacao"
                     }
                   },
                   "howCreated": 0
@@ -829,50 +927,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "02. seguidores"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "seguidores_novos"
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          "457f2c35a85610d00034": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "5dd6ff94083de02ec749",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
-                        }
-                      },
-                      "Property": "total_cliques"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "cardVisual",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
-                        }
-                      },
-                      "Property": "total_cliques"
+                      "Property": "linkedin_post_taxa_visualizacao"
                     }
                   }
                 }
@@ -883,16 +941,16 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "8988d683181203a31b4e",
+                  "name": "72a78ec01ce745a3117b",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_comentarios"
+                      "Property": "linkedin_post_taxa_reacao"
                     }
                   },
                   "howCreated": 0
@@ -909,10 +967,90 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_comentarios"
+                      "Property": "linkedin_post_taxa_reacao"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "3ffd32ca09c6bd9107ca": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "f2a3b518522850d6726a",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "linkedin_post_taxa_conversacao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "linkedin_post_taxa_conversacao"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "457f2c35a85610d00034": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "65534cd22a3b5b39a338",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "linkedin_post_taxa_amplificacao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "linkedin_post_taxa_amplificacao"
                     }
                   }
                 }
@@ -923,16 +1061,16 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "d3b2b37f839543111a1c",
+                  "name": "bb3c04cb56227319eb6a",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_impressoes"
+                      "Property": "linkedin_post_taxa_engajamento"
                     }
                   },
                   "howCreated": 0
@@ -949,21 +1087,21 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_impressoes"
+                      "Property": "linkedin_post_taxa_engajamento"
                     }
                   }
                 }
               ]
             }
           },
-          "e4a1d5efd042a5b44bc9": {
+          "c99d800226b63dddd810": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "204ec2e489204230d879",
+                  "name": "5df30e550bacd9d22461",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -978,16 +1116,61 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "fb6829af03a0ee6bee47",
+                  "name": "6be82dee4887230ec435",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_impressoes"
+                      "Property": "linkedin_total_cliques"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "37a94540b186e7e75dac",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "linkedin_total_comentarios"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "30b5622833538c381639",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "linkedin_total_reacoes"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d69567a0b7a9b3a7c2b1",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "linkedin_total_repostagens"
                     }
                   },
                   "howCreated": 0
@@ -995,7 +1178,7 @@
               ]
             },
             "singleVisual": {
-              "visualType": "lineChart",
+              "visualType": "clusteredColumnChart",
               "objects": {},
               "orderBy": [
                 {
@@ -1027,19 +1210,40 @@
                 ]
               }
             }
+          },
+          "e4775129b78880d110ed": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "e0ad355fdc639218ed2c": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "ea89a72d9343e127bca0": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "dbc181dcdece7ec92885": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
           }
         },
         "visualContainerGroups": {
           "735bf960059a6c808270": {
             "isHidden": true,
             "children": {
-              "450a53dcd95129b45323": {
+              "49399191b04a323167b6": {
                 "isHidden": false
               },
-              "711244bd70a4a3a80d9c": {
-                "isHidden": false
-              },
-              "a975074f761214da6ba7": {
+              "9dd656afa2737d36d065": {
                 "isHidden": false
               }
             }
@@ -1047,22 +1251,13 @@
           "f2df711d603aeab440c3": {
             "isHidden": false,
             "children": {
-              "a0c85001060d208590a7": {
+              "1f2736ca41e41be7804a": {
+                "isHidden": false
+              },
+              "a43e936e600dd7bc1013": {
                 "isHidden": false
               }
             }
-          },
-          "49399191b04a323167b6": {
-            "isHidden": true
-          },
-          "9dd656afa2737d36d065": {
-            "isHidden": true
-          },
-          "a43e936e600dd7bc1013": {
-            "isHidden": false
-          },
-          "1f2736ca41e41be7804a": {
-            "isHidden": false
           }
         }
       }

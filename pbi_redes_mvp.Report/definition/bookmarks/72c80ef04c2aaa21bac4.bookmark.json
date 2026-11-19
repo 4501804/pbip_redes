@@ -159,10 +159,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "(%) total_taxa_engajamento"
+                      "Property": "linkedin_total_taxa_engajamento_percent"
                     }
                   },
                   "howCreated": 0
@@ -213,10 +213,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "02. seguidores"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "seguidores_novos"
+                      "Property": "linkedin_seguidores_novos"
                     }
                   },
                   "howCreated": 0
@@ -267,10 +267,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_impressoes"
+                      "Property": "linkedin_total_impressoes"
                     }
                   },
                   "howCreated": 0
@@ -321,10 +321,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_reacoes"
+                      "Property": "linkedin_total_reacoes"
                     }
                   },
                   "howCreated": 0
@@ -341,10 +341,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_reacoes"
+                      "Property": "linkedin_total_reacoes"
                     }
                   }
                 }
@@ -361,10 +361,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "(%) total_taxa_engajamento"
+                      "Property": "linkedin_total_taxa_engajamento_percent"
                     }
                   },
                   "howCreated": 0
@@ -381,10 +381,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "(%) total_taxa_engajamento"
+                      "Property": "linkedin_total_taxa_engajamento_percent"
                     }
                   }
                 }
@@ -401,10 +401,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "02. seguidores"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "seguidores_novos"
+                      "Property": "linkedin_seguidores_novos"
                     }
                   },
                   "howCreated": 0
@@ -421,10 +421,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "02. seguidores"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "seguidores_novos"
+                      "Property": "linkedin_seguidores_novos"
                     }
                   }
                 }
@@ -441,10 +441,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_cliques"
+                      "Property": "linkedin_total_cliques"
                     }
                   },
                   "howCreated": 0
@@ -461,10 +461,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_cliques"
+                      "Property": "linkedin_total_cliques"
                     }
                   }
                 }
@@ -481,10 +481,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_comentarios"
+                      "Property": "linkedin_total_comentarios"
                     }
                   },
                   "howCreated": 0
@@ -501,10 +501,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_comentarios"
+                      "Property": "linkedin_total_comentarios"
                     }
                   }
                 }
@@ -521,10 +521,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_impressoes"
+                      "Property": "linkedin_total_impressoes"
                     }
                   },
                   "howCreated": 0
@@ -541,10 +541,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_impressoes"
+                      "Property": "linkedin_total_impressoes"
                     }
                   }
                 }
@@ -573,8 +573,8 @@
                                   "Type": 0
                                 },
                                 {
-                                  "Name": " ",
-                                  "Entity": "01. indicadores por publicação",
+                                  "Name": "m",
+                                  "Entity": "Medidas",
                                   "Type": 0
                                 }
                               ],
@@ -598,10 +598,10 @@
                                     "Measure": {
                                       "Expression": {
                                         "SourceRef": {
-                                          "Source": " "
+                                          "Source": "m"
                                         }
                                       },
-                                      "Property": "(%) post_taxa_engajamento"
+                                      "Property": "linkedin_post_taxa_engajamento"
                                     }
                                   }
                                 }
@@ -663,10 +663,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "01. indicadores por publicação"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "ranking_total_impressoes"
+                      "Property": "linkedin_ranking_total_impressoes"
                     }
                   },
                   "howCreated": 0
@@ -678,10 +678,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "01. indicadores por publicação"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "(%) post_taxa_engajamento"
+                      "Property": "linkedin_post_taxa_engajamento"
                     }
                   },
                   "howCreated": 0
@@ -693,10 +693,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "01. indicadores por publicação"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "(%) post_taxa_reacao"
+                      "Property": "linkedin_post_taxa_reacao"
                     }
                   },
                   "howCreated": 0
@@ -708,10 +708,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "01. indicadores por publicação"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "(%) post_taxa_amplificacao"
+                      "Property": "linkedin_post_taxa_amplificacao"
                     }
                   },
                   "howCreated": 0
@@ -723,10 +723,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "01. indicadores por publicação"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "(%) post_taxa_conversacao"
+                      "Property": "linkedin_post_taxa_conversacao"
                     }
                   },
                   "howCreated": 0
@@ -738,10 +738,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "01. indicadores por publicação"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "(%) post_taxa_visualizacao"
+                      "Property": "linkedin_post_taxa_visualizacao"
                     }
                   },
                   "howCreated": 0
@@ -758,10 +758,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "01. indicadores por publicação"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "ranking_total_impressoes"
+                      "Property": "linkedin_ranking_total_impressoes"
                     }
                   }
                 }
@@ -781,10 +781,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_reacoes"
+                      "Property": "linkedin_total_reacoes"
                     }
                   },
                   "howCreated": 0
@@ -801,10 +801,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_reacoes"
+                      "Property": "linkedin_total_reacoes"
                     }
                   }
                 }
@@ -821,10 +821,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "02. seguidores"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "seguidores_novos"
+                      "Property": "linkedin_seguidores_novos"
                     }
                   },
                   "howCreated": 0
@@ -841,10 +841,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "02. seguidores"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "seguidores_novos"
+                      "Property": "linkedin_seguidores_novos"
                     }
                   }
                 }
@@ -861,10 +861,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_cliques"
+                      "Property": "linkedin_total_cliques"
                     }
                   },
                   "howCreated": 0
@@ -881,10 +881,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_cliques"
+                      "Property": "linkedin_total_cliques"
                     }
                   }
                 }
@@ -901,10 +901,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_comentarios"
+                      "Property": "linkedin_total_comentarios"
                     }
                   },
                   "howCreated": 0
@@ -921,10 +921,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_comentarios"
+                      "Property": "linkedin_total_comentarios"
                     }
                   }
                 }
@@ -941,10 +941,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_impressoes"
+                      "Property": "linkedin_total_impressoes"
                     }
                   },
                   "howCreated": 0
@@ -961,10 +961,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_impressoes"
+                      "Property": "linkedin_total_impressoes"
                     }
                   }
                 }
@@ -996,10 +996,10 @@
                     "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "00. indicadores gerais (conteúdo)"
+                          "Entity": "Medidas"
                         }
                       },
-                      "Property": "total_impressoes"
+                      "Property": "linkedin_total_impressoes"
                     }
                   },
                   "howCreated": 0

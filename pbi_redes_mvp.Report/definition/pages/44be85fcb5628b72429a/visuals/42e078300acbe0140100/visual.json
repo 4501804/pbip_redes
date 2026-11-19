@@ -20,10 +20,10 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "01. indicadores por publicação"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "ranking_total_impressoes"
+                  "Property": "linkedin_ranking_total_impressoes"
                 }
               },
               "queryRef": "01. indicadores por publicação.ranking_total_impressoes",
@@ -50,10 +50,10 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "01. indicadores por publicação"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "(%) post_taxa_engajamento"
+                  "Property": "linkedin_post_taxa_engajamento"
                 }
               },
               "queryRef": "01. indicadores por publicação.(%) post_taxa_engajamento",
@@ -66,10 +66,10 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "01. indicadores por publicação"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "(%) post_taxa_reacao"
+                  "Property": "linkedin_post_taxa_reacao"
                 }
               },
               "queryRef": "01. indicadores por publicação.(%) post_taxa_reacao",
@@ -82,10 +82,10 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "01. indicadores por publicação"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "(%) post_taxa_amplificacao"
+                  "Property": "linkedin_post_taxa_amplificacao"
                 }
               },
               "queryRef": "01. indicadores por publicação.(%) post_taxa_amplificacao",
@@ -98,10 +98,10 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "01. indicadores por publicação"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "(%) post_taxa_conversacao"
+                  "Property": "linkedin_post_taxa_conversacao"
                 }
               },
               "queryRef": "01. indicadores por publicação.(%) post_taxa_conversacao",
@@ -114,10 +114,10 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "01. indicadores por publicação"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "(%) post_taxa_visualizacao"
+                  "Property": "linkedin_post_taxa_visualizacao"
                 }
               },
               "queryRef": "01. indicadores por publicação.(%) post_taxa_visualizacao",
@@ -135,10 +135,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "01. indicadores por publicação"
+                    "Entity": "Medidas"
                   }
                 },
-                "Property": "ranking_total_impressoes"
+                "Property": "linkedin_ranking_total_impressoes"
               }
             },
             "direction": "Ascending"
@@ -544,8 +544,8 @@
                         "Type": 0
                       },
                       {
-                        "Name": " ",
-                        "Entity": "01. indicadores por publicação",
+                        "Name": "m",
+                        "Entity": "Medidas",
                         "Type": 0
                       }
                     ],
@@ -569,10 +569,10 @@
                           "Measure": {
                             "Expression": {
                               "SourceRef": {
-                                "Source": " "
+                                "Source": "m"
                               }
                             },
-                            "Property": "(%) post_taxa_engajamento"
+                            "Property": "linkedin_post_taxa_engajamento"
                           }
                         }
                       }

@@ -20,10 +20,10 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "00. indicadores gerais (conteúdo)"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "total_repostagens"
+                  "Property": "linkedin_total_repostagens"
                 }
               },
               "queryRef": "00. indicadores gerais (conteúdo).total_repostagens",
@@ -40,10 +40,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "00. indicadores gerais (conteúdo)"
+                    "Entity": "Medidas"
                   }
                 },
-                "Property": "total_repostagens"
+                "Property": "linkedin_total_repostagens"
               }
             },
             "direction": "Descending"

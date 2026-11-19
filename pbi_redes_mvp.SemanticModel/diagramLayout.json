@@ -4,8 +4,8 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
-        "y": 1.4064836552720896
+        "x": 879.70353107052892,
+        "y": 0
       },
       "nodes": [
         {
@@ -88,58 +88,6 @@
         },
         {
           "location": {
-            "x": 363.22781166389689,
-            "y": 676.69792028890618
-          },
-          "nodeIndex": "00. indicadores gerais (conteúdo)",
-          "nodeLineageTag": "85e84507-7be9-4e8c-b8a4-39877c95a25e",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 2
-        },
-        {
-          "location": {
-            "x": 617.312554879217,
-            "y": 678.56679161951627
-          },
-          "nodeIndex": "01. indicadores por publicação",
-          "nodeLineageTag": "0d38249d-2245-4e1c-9c45-153ee1543d1b",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 12
-        },
-        {
-          "location": {
-            "x": 879.5236388103184,
-            "y": 678.27993380202622
-          },
-          "nodeIndex": "02. seguidores",
-          "nodeLineageTag": "75d8fa83-4844-4421-8aac-6131cae94f4a",
-          "size": {
-            "height": 200,
-            "width": 234
-          },
-          "zIndex": 3
-        },
-        {
-          "location": {
-            "x": 1128.5223501039607,
-            "y": 680.14192253495014
-          },
-          "nodeIndex": "03. visitas",
-          "nodeLineageTag": "1d45220d-1c61-46e6-b0b3-bc0135a41b4f",
-          "size": {
-            "height": 200,
-            "width": 234
-          },
-          "zIndex": 4
-        },
-        {
-          "location": {
             "x": 1375.4638003934947,
             "y": 358.65332675003185
           },
@@ -153,20 +101,32 @@
         },
         {
           "location": {
+            "x": 2196.0048067182815,
+            "y": 437.28339580975813
+          },
+          "nodeIndex": "Medidas",
+          "nodeLineageTag": "40e476e1-4c3c-468e-b3d4-539e5f9f834c",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
             "x": 0,
             "y": 252.16573412285942
           },
           "nodeIndex": "dim_metrica",
-          "nodeLineageTag": "3e4fcabd-d9bc-43b7-87d2-6b8ba9171bf1",
           "size": {
             "height": 200,
             "width": 234
           },
-          "zIndex": 10
+          "zIndex": 0
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 56.879438941376527,
+      "zoomValue": 63.771484390577335,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

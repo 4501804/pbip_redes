@@ -39,10 +39,10 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "02. seguidores"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "seguidores_novos"
+                  "Property": "linkedin_seguidores_novos"
                 }
               },
               "queryRef": "02. seguidores.seguidores_novos",

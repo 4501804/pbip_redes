@@ -20,10 +20,10 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "01. indicadores por publicação"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "(%) post_taxa_amplificacao"
+                  "Property": "linkedin_post_taxa_amplificacao"
                 }
               },
               "queryRef": "01. indicadores por publicação.(%) post_taxa_amplificacao",
@@ -40,10 +40,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "01. indicadores por publicação"
+                    "Entity": "Medidas"
                   }
                 },
-                "Property": "(%) post_taxa_amplificacao"
+                "Property": "linkedin_post_taxa_amplificacao"
               }
             },
             "direction": "Descending"

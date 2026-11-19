@@ -58,10 +58,10 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "01. indicadores por publicação"
+                      "Entity": "Medidas"
                     }
                   },
-                  "Property": "vl_metrica_linkedin"
+                  "Property": "linkedin_metrica"
                 }
               },
               "queryRef": "01. indicadores por publicação.vl_metrica_linkedin",
